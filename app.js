@@ -11,11 +11,11 @@ app.set('views','./views/pages');
 
 //rutas
 app.get("/", (req, res) => { res.render('index');  });
-app.get("/products", (req, res) => { res.render('product');  });
-app.get("/cart", (req, res) => { res.render('cart');  });
-app.get("/checkout", (req, res) => { res.render('checkout');  });
-app.get("/register", (req, res) => { res.render('register');  });
-app.get("/login", (req, res) => { res.render('login');  });
+app.get("/products", (req, res) => { res.render('product',{products: products});  });
+app.get("/cart", (req, res) => { res.render('cart',{products: products});  });
+app.get("/checkout", (req, res) => { res.render('checkout',{products: products});  });
+app.get("/register", (req, res) => { res.render('register',{products: products});  });
+app.get("/login", (req, res) => { res.render('login',{products: products});  });
 
 
 
