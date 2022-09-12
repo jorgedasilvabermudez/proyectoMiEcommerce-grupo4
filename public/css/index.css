@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ProductHero {
+  display: flex;
+  justify-content: center;
+  margin: 93px 0 24px;
+}
+/*Contenedor Product Hero*/
+.ProductHero > div:nth-child(1) {
+  background-color: #0cb093;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*ProductHeroCard estilos generales*/
+.ProductHeroCard {
+  color: #fff;
+  width: 90%;
+  background-size: cover;
+  padding: 8px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 16px;
+}
+/*--------------*/
+.ProductHero > div:nth-child(1) > div:nth-child(1) {
+  background-image: url("/assets/disneybg.jpg");
+  position: relative;
+  top: -90px;
+}
+.ProductHero > div:nth-child(1) > div:nth-child(2) {
+  background-image: url("/assets/hbobg.jpg");
+  position: relative;
+  top: 90px;
+}
+.ProductHeroBrandContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ProductHeroBrandContainer > span:nth-child(2) {
+  font-weight: 700;
+  font-size: 20px;
+}
+/*Span solo en desktop*/
+.ProductHeroBrandContainer > :nth-child(3) {
+  display: none;
+}
+.ProductHeroBrandContainer img {
+  border-radius: 8px;
+  width: 80px;
+}
