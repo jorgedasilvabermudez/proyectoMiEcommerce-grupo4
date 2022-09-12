@@ -26,5 +26,24 @@
         </div>
       </div>
     </section>
+    <section>
+      <h2>Te puede interesar</h2>
+      <div class="ProductContainer">
+        <article class="ProductCard">
+          <% for(let i = 0; i <=4; i++){%>
+          <img src="<%=products[i].images[1] %>" />
+          <div>
+            <span><%=products[i].title %></span>
+            <span>Cantidad</span>
+            <span>Cantidad puntos</span>
+            <span>Puntos</span>
+          </div>
+        </article>
+        <% }%>
+      </div>
+    </section>
+    <section>
+      <h2>Los mas pedidos</h2>
+    </section>
   </body>
 </html>

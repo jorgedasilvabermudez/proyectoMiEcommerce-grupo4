@@ -56,3 +56,18 @@
   border-radius: 8px;
   width: 80px;
 }
+@media only screen and (min-width: 418px) {
+  .ProductHero {
+    flex-direction: row;
+    padding: 0 128px 0 128px;
+  }
+  .ProductHeroCard {
+    height: 256px;
+  }
+  .ProductHero > div:nth-child(2),
+  .ProductHero > div:nth-child(3) {
+    border: 1px solid black;
+    position: relative;
+    bottom: 50px;
+  }
+}
