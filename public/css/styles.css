@@ -2,6 +2,7 @@
 @import url('../css/header.css');
 @import url('../css/productCard.css');
 @import url('../css/footer.css');
+@import url('../css/cart.css');
 
 *{
     padding: 0;

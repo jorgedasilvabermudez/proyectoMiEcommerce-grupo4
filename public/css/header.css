@@ -10,9 +10,9 @@ header{
     border-bottom: 1px gray solid;
 }
 
-/* #header__logo__big{
+#header__logo__big{
     display: none;
-} */
+} 
 
 #searchBar{
     border-radius: 20px;

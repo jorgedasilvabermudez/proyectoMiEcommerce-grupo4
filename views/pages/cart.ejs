@@ -5,40 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>MiEcommerce</title>
 </head>
-
 <body>
-    <header></header>
-
-    <!-- <div class="divCart">
-    <a href="#" class="volver"><img src="/assets/arrow-left.svg" alt="">Volver</a>
-
-    <section class="sectionCart">
-        <h1 class="titleCart">Productos en tu Carrito</h1>
-        <% for(let i=5; i<9; i++){ %>
-
-            <article class="articleCart">
-
-            <div class="informacion">
-                <div class="divCart__imgDes">
-                    <img class="article__img" src="<%= products[i].images[1] %>" alt="">
-                    <p><%= products[i].description %></p>
-                </div>
-
-                <button>Quitar</button>
-                <input type="number">
-                <p><%= products[i].price  %></p>
-            </div>
-            </article>
-            <% } %>
-            <p>Total de Puntos </p>
-            <button>Ir a Pagar</button>
-
-    </section>
-    </div> -->
-
+<%- include('../partials/header.ejs', { 
+    bigLogo: true,
+    smallLogo: true,
+    searchBox: true,
+    searchLogo: true,
+    cartProfile: true
+    }) %> 
 
     <div class="divCartMajor">
         <div class="divCartSecond">
@@ -59,9 +36,7 @@
                             </div>
                             <div class="cardButton">
                                 <button class="buttonQuitar">Quitar</button>
-                                <!-- <input type="number" value="2" min="1" step="1" > -->
                                 <div class="counter"><button>-</button><span>2</span><button>+</button></div>
-                                <!-- <p><button>+</button><span>2</span><button>-</button></p> -->
                                 <p>
                                     <%= products[i].price %>
                                 </p>
@@ -80,7 +55,7 @@
             </section>
         </div>
     </div>
-
+<%- include('../partials/footer.ejs') %> 
 </body>
 
 </html>
