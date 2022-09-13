@@ -26,23 +26,28 @@
         </div>
       </div>
     </section>
-    <section class="InterestProducts">
-      <h1>Te puede interesar</h1>
+    <%- include('../partials/productCard') %>
+    <section class="MostRequested">
+      <h1>Los mas pedidos</h1>
       <div class="ProductContainer">
-        <% for(let i = 0; i <=4; i++){%>
+        <% for(let i = 10; i <=17; i++){%>
         <article class="ProductCard" id="<%=products[i].id %>">
           <img src="<%=products[i].images[1] %>" />
           <div class="ProductCardSpecification">
             <span><%=products[i].title %></span>
-            <span><%=products[i].rating.count %></span>
-            <span>Puntos</span>
+            <div>
+              <span><%=products[i].rating.count %></span>
+              <span>Puntos</span>
+            </div>
           </div>
         </article>
         <% }%>
       </div>
     </section>
-    <section>
-      <h2>Los mas pedidos</h2>
-    </section>
   </body>
+  <script>
+    function redirect(productId) {
+      window.location.href = "http://www.w3schools.com";
+    }
+  </script>
 </html>

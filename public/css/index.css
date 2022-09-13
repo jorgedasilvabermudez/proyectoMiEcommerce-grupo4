@@ -5,12 +5,13 @@
 }
 html {
   height: 100%;
+  font-size: 62.3%;
 }
 body {
   background-color: #efefef;
   height: 100%;
 }
-/*PRODUCT HERO*/
+/* ----- PRODUCT HERO ----- */
 .ProductHero {
   display: flex;
   justify-content: center;
@@ -53,7 +54,7 @@ body {
 }
 .ProductHeroBrandContainer > span:nth-child(2) {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
 }
 /*Span oculto en mobile*/
 .ProductHeroBrandContainer > span:nth-child(3) {
@@ -63,14 +64,20 @@ body {
   border-radius: 8px;
   width: 80px;
 }
-/*INTEREST SECTION*/
-.InterestProducts {
+/* ----- INTEREST SECTION -----*/
+h1 {
+  font-size: 2.4rem;
+}
+.InterestProducts,
+.MostRequested {
   padding: 24px 16px;
 }
 .ProductContainer {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 24px;
+  cursor: pointer;
 }
 .ProductCard {
   display: flex;
@@ -87,25 +94,36 @@ body {
   border-radius: 8px;
 }
 .ProductCardSpecification {
-  border: 1px solid black;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+.ProductCardSpecification > div {
+  display: flex;
+  flex-direction: column;
+}
 .ProductCardSpecification span {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
-.ProductCardSpecification > span:nth-child(3) {
+.ProductCardSpecification > div span:nth-child(2) {
   font-weight: 300;
-  font-size: 8px;
+  font-size: 1rem;
 }
 .ProductCardSpecification > :nth-child(2) {
   margin-top: auto;
 }
-/*RESPONSIVE*/
-@media only screen and (min-width: 418px) {
+/* ----- MOST REQUESTED -----*/
+.MostRequested {
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+.MostRequested h1 {
+  margin-bottom: 24px;
+}
+/* ----- RESPONSIVE ----- */
+@media only screen and (min-width: 450px) {
   .ProductHero {
     flex-direction: row;
     padding: 0 128px 0 128px;
@@ -120,12 +138,32 @@ body {
     bottom: 50px;
   }
   /*INTEREST PRODUCT */
-  .InterestProducts {
+  .InterestProducts,
+  .MostRequested {
     padding: 0 128px 0 128px;
   }
   .ProductContainer {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+  }
+  .ProductCard {
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 270px;
+    gap: 8px;
+    justify-content: start;
+  }
+  .ProductCard img {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+  }
+  .ProductCardSpecification {
+    flex-direction: row;
+  }
+  .ProductCardSpecification > :nth-child(2) {
+    margin-left: auto;
   }
 }
