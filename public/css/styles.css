@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('../css/index.css');
 @import url('../css/head.css');
 @import url('../css/header.css');
 @import url('../css/productCard.css');
-@import url('../css/footer.css');
 @import url('../css/cart.css');
 @import url('../css/register.css');
+@import url('../css/footer.css');
 
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 html{
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EFEFEF;
+    font-size: 62.5%;
 }
 body{
     height: 100%;

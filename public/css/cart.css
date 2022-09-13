@@ -1,38 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
-html {
-    margin: 0px;
-    padding: 0px;
-    background-color: #EFEFEF;
-    font-family: 'Open Sans', sans-serif;
-
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 .divCartMajor {
     margin: 16px;
-
 }
 
 .back {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #000000;
 
 }
 
 .titleCart {
-    font-size: 24px;
+    font-size: 2.4rem;
     margin-top: 8px;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +27,7 @@ html {
     margin: 0 auto;
 }
 
-article {
+.articleCard {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
@@ -60,12 +41,12 @@ article {
     display: flex;
     align-items: center;
     margin-left: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
 
 }
 
 .cardInfromation p {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -84,8 +65,6 @@ article {
     margin-left: 80px;
     margin-right: 8px;
     margin-bottom: 8px;
-
-
 }
 
 .cardButton .buttonQuitar {
@@ -95,7 +74,7 @@ article {
     border: 0;
     background-color: #494F51;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -112,7 +91,7 @@ article {
 }
 .cardButton p {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .counter{
@@ -137,6 +116,7 @@ article {
 .counter span{
     margin-top: 4px;
     margin-bottom: 4px;
+    font-size: 1.6rem;
 }
 
 
@@ -150,12 +130,12 @@ article {
 
 .divPagar:first-child {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .divPagar .totalPrice {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 .divButton{
     display: flex;
@@ -170,7 +150,7 @@ article {
     background: #494F51;
     border-radius: 16px;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     border: 0;
 }

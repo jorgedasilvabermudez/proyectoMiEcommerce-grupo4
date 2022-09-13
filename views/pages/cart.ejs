@@ -27,7 +27,7 @@
                 <h1 class="titleCart">Productos en tu Carrito</h1>
 
                     <% for(let i=10; i<14; i++) { %>
-                        <article>
+                        <article class="articleCard">
                             <div class="cardInfromation">
                                 <img class="card__img" src="<%= products[i].images[1] %>" alt="">
                                 <p>
@@ -42,7 +42,7 @@
                                 </p>
                             </div>
 
-                        </article>
+                        </article class="articleCard">
                         <% } %>
                             <div class="divPagar">
                                 <p > Total de Puntos </p>

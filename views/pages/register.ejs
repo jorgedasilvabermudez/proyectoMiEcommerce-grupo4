@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Document</title>
   </head>
-  <body>
-    <%- include('../partials/header.ejs', { 
-      bigLogo: true,
-      smallLogo: false,
-      searchBox: false,
-      searchLogo: false,
-      cartProfile: false
-    }) %> 
+  <body class="bodyregister">
+    <div>
+
+      <%- include('../partials/header.ejs', { 
+        bigLogo: true,
+        smallLogo: false,
+        searchBox: false,
+        searchLogo: false,
+        cartProfile: false
+      }) %> 
+      </div>
     <section class="section-register">
       <div class="background-top">
         <div class="container-formregister">
@@ -48,6 +51,8 @@
         </div>
       </div>
     </section>
-    <%- include('../partials/footer.ejs') %> 
+    <div>
+      <%- include('../partials/footer.ejs') %> 
+    </div>
   </body>
 </html>

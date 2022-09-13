@@ -1,14 +1,13 @@
-html {
-  padding: 0px;
-  margin: 0px;
-}
 
-body {
+.bodyregister {
   min-width: 300px;
   padding: 0px;
   margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* flex-direction: column; */
   text-align: center;
-  display: flex;
+  height: 100vh;
 }
 .formregister-title {
   font-size: 32px;
