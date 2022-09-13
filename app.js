@@ -8,6 +8,7 @@ app.set("view engine", "ejs");
 app.set("views", "./views/pages");
 
 //rutas
+
 app.get("/", (req, res) => { res.render('index',{ products: products });  });
 app.get("/products", (req, res) => { res.render('product',{products: products});  });
 app.get("/cart", (req, res) => { res.render('cart',{products: products});  });
