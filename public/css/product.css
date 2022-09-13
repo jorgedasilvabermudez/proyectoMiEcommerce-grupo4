@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ROUTES */
+.routes {
+    margin: 16px 16px 0px 16px;
+    display: inline-block;
+}
+
+@media (min-width: 415px) {
+
+    /* CONTENEDOR EXTERNO */
+    /* .img_container {
+        width: 1280px;
+        min-width: 414px;
+        max-width: none;
+        margin: 0 128px;
+        border-radius: 20px;
+        border: 1px solid gray;
+    } */
+
+
+
+
+    /* CONTENEDOR */
+
+    /* TITULO */
+
+
+
+    /* GALERIA */
+
+
+    /* MENU IMAGENES */
+
+
+    /* PUNTOS */
+
+
+    /* INFORMACION */
+
+    /* BOTON AGREGAR AL CARRITO */
+}
+
+@media (max-width: 415px) {
+
+    /* CONTENEDOR EXTERNO */
+    .imgs {
+        margin: 16px;
+        border: 1px solid #EFEFEF;
+        background-color:
+            white;
+        border-radius: 10px;
+        box-shadow: 2px 3px 2px rgb(195, 195, 195);
+    }
+
+    /* CONTENEDOR */
+    .img_container {
+        display: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: start;  
+        max-width: 350;
+        min-width: none;
+        width: 350px;
+        margin: 0px 16px;
+    }
+
+    .img_container div {
+        max-width: max-content;
+    }
+
+    /* TITULO */
+    .img_title {
+        max-width: 350px;
+        min-width: none;
+        width: auto;
+        height: 54px;
+        left: 32px;
+        top: 128px;
+    }
+
+    h3 {
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    /* GALERIA */
+
+    .img_galery {
+        max-width: 350px;
+
+        min-width: 100px;
+    }
+
+    .img_galery img {
+        border-radius: 20px;
+        max-width: 350px;
+        margin: 8px 0px;
+
+    }
+
+    /* MENU IMAGENES */
+    .img_menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .img_menu div img {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+    }
+
+    /* PUNTOS */
+    .img_point {
+        height: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .img_point div {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h5 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* INFORMACION */
+    .img_info {
+        height: 258px;
+        width: 350px;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .img_info p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* BOTON AGREGAR AL CARRITO */
+    .img_button {
+        margin: 16px 0;
+        width: 350px;
+        max-width: 350px;
+
+    }
+
+    .img_a {
+        width: 100%;
+        background: #494F51;
+        border-radius: 16px;
+        color: white;
+    }
+
+}
