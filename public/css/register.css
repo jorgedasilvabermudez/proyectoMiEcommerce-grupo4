@@ -1,0 +1,95 @@
+
+.bodyregister {
+  min-width: 300px;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* flex-direction: column; */
+  text-align: center;
+  height: 100vh;
+}
+.formregister-title {
+  font-size: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+.background-top {
+  background-color: #0cb093;
+  height: 264px;
+  width: 100vw;
+}
+.container-formregister {
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  text-align: start;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+.formregister {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  width: 80%;
+  height: 100%;
+}
+.formregister-containerInput {
+  display: flex;
+  flex-direction: column;
+}
+.formregister-input {
+  display: block;
+  margin: 4px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 4px 16px;
+  height: 32px;
+}
+.formregister-button {
+  display: block;
+  margin: 3px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 8px 16px;
+  background-color: #494f51;
+  color: white;
+}
+
+.container-leyend {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 60px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 414px) {
+}
+@media only screen and (min-width: 415px) {
+}
+@media only screen and (min-width: 600px) {
+  .background-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-formregister {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 480px;
+    margin-top: 17vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+/* @media only screen and (min-width: 992px) {…}//
+ @media only screen and (min-width: 1200px) {…}// */

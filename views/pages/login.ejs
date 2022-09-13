@@ -1,1 +1,50 @@
-<h1>login</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="bodyregister">
+  <%- include('../partials/header.ejs', { 
+    bigLogo: true,
+    smallLogo: false,
+    searchBox: false,
+    searchLogo: false,
+    cartProfile: false
+  }) %> 
+
+    <section class="section-register">
+      <div class="background-top">
+        <div class="container-formregister">
+          <form action="" class="formregister">
+            <h1 class="formregister-title">¡Hola!</h1>
+            <div class="formregister-containerInput">
+              <input
+                type="text"
+                class="formregister-input"
+                placeholder="Tu nombre de usuario"
+              />
+              <input
+                type="password"
+                class="formregister-input"
+                placeholder="Tu contraseña"
+              />
+
+              <button class="formregister-button" action="submit">
+                Iniciar Sesion
+              </button>
+            </div>
+          </form>
+          <div></div>
+        </div>
+        <div class="container-leyend">
+          <p>¿No tienes cuenta? <u>Registrate</u></p>
+        </div>
+      </div>
+    </section>
+  <%- include('../partials/footer.ejs') %> 
+  </body>
+</html>
