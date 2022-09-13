@@ -1,0 +1,21 @@
+@import url('../css/head.css');
+@import url('../css/header.css');
+@import url('../css/productCard.css');
+@import url('../css/footer.css');
+@import url('../css/cart.css');
+@import url('../css/register.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

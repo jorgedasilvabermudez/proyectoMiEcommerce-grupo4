@@ -1,0 +1,30 @@
+<header>
+    <!-- logos small -->
+    <% if(locals.smallLogo && smallLogo===true){  %> 
+    <img id="header__logo__small" src="/img/MiE.png" alt="logo MiEcommerce">
+    <% } %> 
+    <!-- logos big-->
+    <% if(locals.bigLogo && bigLogo===true){  %> 
+    <img id="header__logo__big" src="/img/MiEcommerce.png" alt="logo MiEcommerce">
+    <% } %> 
+    <!-- search bar -->
+    <% if(locals.searchBox && searchBox===true){  %> 
+    <input type="text" name="searchBar" id="searchBar" placeholder="Buscar productos...">
+    <% } %> 
+    <!-- search logo -->
+    <% if(locals.searchLogo && searchLogo===true){  %> 
+    <span><img src="/assets/magnify.svg" alt=""></span>
+    <% } %> 
+    <!-- buttons   -->
+    <% if(locals.cartProfile && cartProfile===true){  %> 
+    <div id="header__profile__buttons">
+        <a href="/cart">
+            <img src="/img/Status=Default, Notification=Yes, Type=Default.png" alt="cart">
+        </a>
+        <a href="/cart">
+            <img src="/img/Property 1=Default, Text=True.png" alt="profile">
+        </a>   
+    </div>
+    <% } %> 
+</header>
+

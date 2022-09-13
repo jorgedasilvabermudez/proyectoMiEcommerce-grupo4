@@ -1,1 +1,53 @@
-<h1>register</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs', { 
+      bigLogo: true,
+      smallLogo: false,
+      searchBox: false,
+      searchLogo: false,
+      cartProfile: false
+    }) %> 
+    <section class="section-register">
+      <div class="background-top">
+        <div class="container-formregister">
+          <form action="" class="formregister">
+            <h1 class="formregister-title">¡Registrate!</h1>
+            <div class="formregister-containerInput">
+              <input
+                type="email"
+                class="formregister-input"
+                placeholder="Tu email"
+              />
+              <input
+                type="password"
+                class="formregister-input"
+                placeholder="Tu nueva contraseña"
+              />
+              <input
+                type="password"
+                class="formregister-input"
+                placeholder="Repite tu contraseña"
+              />
+              <button class="formregister-button" action="submit">
+                Crear Cuenta
+              </button>
+            </div>
+          </form>
+          <div></div>
+        </div>
+        <div class="container-leyend">
+          <p>¿Ya tienes cuenta? <u>Inicia Sesión</u></p>
+        </div>
+      </div>
+    </section>
+    <%- include('../partials/footer.ejs') %> 
+  </body>
+</html>
