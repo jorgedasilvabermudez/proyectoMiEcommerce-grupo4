@@ -3,13 +3,12 @@ const app= express();
 const router= express.Router();
 const products= require('./products.json')
 
-
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
-app.set('views','./views/pages');
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+app.set("views", "./views/pages");
 
 //rutas
-app.get("/", (req, res) => { res.render('index');  });
+app.get("/", (req, res) => { res.render('index',{ products: products });  });
 app.get("/products", (req, res) => { res.render('product',{products: products});  });
 app.get("/cart", (req, res) => { res.render('cart',{products: products});  });
 app.get("/checkout", (req, res) => { res.render('checkout',{products: products});  });

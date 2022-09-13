@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.3%;
+}
+body {
+  background-color: #efefef;
+  height: 100%;
+}
+/* ----- PRODUCT HERO ----- */
+.ProductHero {
+  display: flex;
+  justify-content: center;
+  margin: 93px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+/*Back ground verde*/
+.ProductHero > div:nth-child(1) {
+  background-color: #0cb093;
+  width: 100%;
+  position: absolute;
+  height: 256px;
+  z-index: -1;
+}
+/*ProductHeroCard estilos generales*/
+.ProductHeroCard {
+  color: #fff;
+  width: 90%;
+  background-size: cover;
+  padding: 8px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 16px;
+}
+.ProductHero > div:nth-child(2) {
+  background-image: url("/assets/disneybg.jpg");
+}
+.ProductHero > div:nth-child(3) {
+  background-image: url("/assets/hbobg.jpg");
+}
+.ProductHeroBrandContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ProductHeroBrandContainer > span:nth-child(2) {
+  font-weight: 700;
+  font-size: 2rem;
+}
+/*Span oculto en mobile*/
+.ProductHeroBrandContainer > span:nth-child(3) {
+  display: none;
+}
+.ProductHeroBrandContainer img {
+  border-radius: 8px;
+  width: 80px;
+}
+/* ----- INTEREST SECTION -----*/
+h1 {
+  font-size: 2.4rem;
+}
+.InterestProducts,
+.MostRequested {
+  padding: 24px 16px;
+}
+.ProductContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.ProductCard {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+  padding: 8px 15px 8px 8px;
+}
+.ProductCard img {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+}
+.ProductCardSpecification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ProductCardSpecification > div {
+  display: flex;
+  flex-direction: column;
+}
+.ProductCardSpecification span {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.ProductCardSpecification > div span:nth-child(2) {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.ProductCardSpecification > :nth-child(2) {
+  margin-top: auto;
+}
+/* ----- MOST REQUESTED -----*/
+.MostRequested {
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+.MostRequested h1 {
+  margin-bottom: 24px;
+}
+/* ----- RESPONSIVE ----- */
+@media only screen and (min-width: 450px) {
+  .ProductHero {
+    flex-direction: row;
+    padding: 0 128px 0 128px;
+  }
+  .ProductHeroCard {
+    height: 256px;
+  }
+
+  .ProductHero > div:nth-child(2),
+  .ProductHero > div:nth-child(3) {
+    position: relative;
+    bottom: 50px;
+  }
+  /*INTEREST PRODUCT */
+  .InterestProducts,
+  .MostRequested {
+    padding: 0 128px 0 128px;
+  }
+  .ProductContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ProductCard {
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 270px;
+    gap: 8px;
+    justify-content: start;
+  }
+  .ProductCard img {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+  }
+  .ProductCardSpecification {
+    flex-direction: row;
+  }
+  .ProductCardSpecification > :nth-child(2) {
+    margin-left: auto;
+  }
+}
