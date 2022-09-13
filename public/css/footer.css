@@ -1,0 +1,56 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 94px;
+    width: 100%;
+    font-family:'Open Sans'; 
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px gray solid;
+    color: #999999;    
+}
+
+i{
+    background-color: red;
+}
+
+.footer__socials{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    
+}
+
+.footer__appStores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer__links a{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    font-family:'Open Sans'; 
+    text-decoration: none;
+    font-size: 12px;
+    color: #999999;
+} 
+
+@media only screen and (min-width: 415px) {
+
+footer{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer__socials{
+    order: -1;
+}
+
+}
