@@ -9,14 +9,9 @@
   </head>
   <body class="bodyregister">
     <div>
-
-      <%- include('../partials/header.ejs', { 
-        bigLogo: true,
-        smallLogo: false,
-        searchBox: false,
-        cartProfile: false
-      }) %> 
-      </div>
+      <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+      searchBox: false, cartProfile: false }) %>
+    </div>
     <section class="section-register">
       <div class="background-top">
         <div class="container-formregister">
@@ -27,18 +22,30 @@
                 type="email"
                 class="formregister-input"
                 placeholder="Tu email"
+                required
+                alt="Campo para ingresara correo"
               />
               <input
                 type="password"
                 class="formregister-input"
                 placeholder="Tu nueva contraseña"
+                required
+                alt="Campo para ingresar contraseña"
               />
               <input
                 type="password"
                 class="formregister-input"
                 placeholder="Repite tu contraseña"
+                required
+                maxlength="16"
+                minlength="8"
+                alt="Repite tu contraseña"
               />
-              <button class="formregister-button" action="submit">
+              <button
+                alt="Crear cuenta"
+                class="formregister-button"
+                action="submit"
+              >
                 Crear Cuenta
               </button>
             </div>
@@ -46,12 +53,12 @@
           <div></div>
         </div>
         <div class="container-leyend">
-          <p>¿Ya tienes cuenta? <a href="/login"><u>Inicia Sesión</u></a></p>
+          <p alt="Ingresar si ya tienes cuenta ">
+            ¿Ya tienes cuenta? <a href="/login"><u>Inicia Sesión</u></a>
+          </p>
         </div>
       </div>
     </section>
-    <div>
-      <%- include('../partials/footer.ejs') %> 
-    </div>
+    <div><%- include('../partials/footer.ejs') %></div>
   </body>
 </html>
