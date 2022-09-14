@@ -1,10 +1,8 @@
 .imgs{
     border: 1px solid #EFEFEF;
-    background-color: white;
     border-radius: 10px;
     min-width: max-content;
     max-width: 100vw;
-    box-shadow: 2px 3px 2px rgb(195, 195, 195);
 
 }
 p {
@@ -43,7 +41,7 @@ h4 {
 
 /* ROUTES */
 .routes {
-    margin: 16px 16px 0px 16px;
+    margin: 16px 16px 0px 128px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,6 +54,9 @@ h4 {
     .imgs {
         display: flex;
         max-width: min-content;
+        margin-bottom: 40px;
+        opacity: 1;
+
     }
 
     /* CONTENEDOR */
@@ -67,8 +68,11 @@ h4 {
         max-height: 536px;
         margin: 0px 128px;
         border-radius: 20px;
+        background-color: white;
         border: 1px solid gray;
         align-items: start;
+        box-shadow: 2px 3px 2px rgb(195, 195, 195);
+
 
     }
 
@@ -148,7 +152,7 @@ h4 {
 
     .img_info p {
         font-weight: 400;
-        font-size: 12px;
+        font-size: 1.2rem;
         line-height: 16px;
     }
 
@@ -202,7 +206,8 @@ h4 {
     /* TITULO */
     .img_title {
         display: block;
-        max-width: 350px;
+        width: 288px;
+        height: 64px;
         min-width: none;
         width: auto;
         height: 54px;
@@ -215,11 +220,9 @@ h4 {
     }
 
     h3 {
-        font-family: 'Open Sans';
-        font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 2.4rem;
+        line-height: 33px;
     }
 
     /* GALERIA */
@@ -252,7 +255,7 @@ h4 {
     /* IMG PUNTOS */
     h5 {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 16px;
         position: relative;
         bottom: 10px;
