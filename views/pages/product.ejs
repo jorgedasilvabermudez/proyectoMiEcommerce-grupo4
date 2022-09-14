@@ -8,67 +8,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 </head>
-<body>
-    <%- include('../partials/header.ejs', { 
-    bigLogo: false,
-    smallLogo: true,
-    searchBox: true,
-    cartProfile: true
-    }) %>
-    <main>
-        <div class="routes">
-            <a href="/" class="back">
-                <img src="/assets/arrow-left.svg"/> Volver al listado </a> <a class="back" href="/product.html"> > Bebidas </a>
-        </div>
-        <div class="imgs">
-            <div class="img_container">
-                <div class="img_title">
-                    <h3><%=products[16].title%></h3>
-                </div>
-                <div class="img_galery">
-                    <img src="<%=products[16].images[3]%>" alt="">
-                </div>
-                <div class="img_menu"> 
-                    <div><img src="<%=products[16].images[0]%>" alt="menu1"></div>
-                    <div><img src="<%=products[16].images[1]%>" alt="menu2"></div>
-                    <div><img src="<%=products[16].images[2]%>" alt="menu3"></div>
-                </div>
-                <div class="text-areas">
-                    <div class="img_title-D">
-                        <h3><%=products[16].title%></h3>
-                    </div>
-                    <div class="img_point">
-                        <div>
-                            <h4>19.900</h4>
-                        </div>
-                        <div>
-                            <h5>PUNTOS</h5>
-                        </div>
-                    </div>
-                    <div class="img_button-D">
-                        <a class="img_a" href="/cart">
-                            Agregar Al Carrito
-                        </a>
-                    </div>
-                    <div class="img_info">
-                        <p><%=products[16].description%></p>
-                    </div>
-                </div>
-                <div  class="img_button">
-                    <a href="/cart" class="img_a">
-                        Agregar Al Carrito
-                    </a>
-                </div>
-            </div>
-        </div>
-        <%- include('../partials/productCard.ejs') %>
-        <div>
-            <%- include('../partials/navbar.ejs') %>
-        </div>
-        
 
-    </main>
-    <%- include('../partials/footer.ejs') %> 
+<body>
+    <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true, searchBox: true, cartProfile: true }) %>
+        <main>
+            <div class="container_product">
+
+                <div class="imgs">
+                    <div class="routes">
+                        <a href="/" class="back">
+                            <img src="/assets/arrow-left.svg" /> Volver al listado </a> <a class="back"
+                            href="/product.html"> > Bebidas </a>
+                    </div>
+                    <div class="img_container">
+                        <div class="img_title">
+                            <h3>
+                                <%=products[16].title%>
+                            </h3>
+                        </div>
+                        <div class="img_galery">
+                            <img src="<%=products[16].images[3]%>" alt="">
+                        </div>
+                        <div class="img_menu">
+                            <div><img src="<%=products[16].images[0]%>" alt="menu1"></div>
+                            <div><img src="<%=products[16].images[1]%>" alt="menu2"></div>
+                            <div><img src="<%=products[16].images[2]%>" alt="menu3"></div>
+                        </div>
+                        <div class="text-areas">
+                            <div class="img_title-D">
+                                <h3>
+                                    <%=products[16].title%>
+                                </h3>
+                            </div>
+                            <div class="img_point">
+                                <div>
+                                    <h4>19.900</h4>
+                                </div>
+                                <div>
+                                    <h5>PUNTOS</h5>
+                                </div>
+                            </div>
+                            <div class="img_button-D">
+                                <a class="img_a" href="/cart">
+                                    Agregar Al Carrito
+                                </a>
+                            </div>
+                            <div class="img_info">
+                                <p>
+                                    <%=products[16].description%>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img_button">
+                            <a href="/cart" class="img_a">
+                                Agregar Al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <%- include('../partials/productCard.ejs') %>
+
+                
+            </div>
+            <%- include('../partials/navbar.ejs') %>
+
+        </main>
+        <%- include('../partials/footer.ejs') %>
 </body>
 <script>
     w

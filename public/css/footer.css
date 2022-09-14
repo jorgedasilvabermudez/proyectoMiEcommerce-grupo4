@@ -43,6 +43,8 @@ footer{
 footer{
     flex-direction: row;
     justify-content: space-around;
+    height: 64px;
+
 }
 
 .footer__socials{
