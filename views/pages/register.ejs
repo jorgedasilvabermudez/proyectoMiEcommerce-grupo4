@@ -1,1 +1,64 @@
-<h1>register</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="bodyregister">
+    <div>
+      <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+      searchBox: false, cartProfile: false }) %>
+    </div>
+    <section class="section-register">
+      <div class="background-top">
+        <div class="container-formregister">
+          <form action="/" class="formregister">
+            <h1 class="formregister-title">¡Registrate!</h1>
+            <div class="formregister-containerInput">
+              <input
+                type="email"
+                class="formregister-input"
+                placeholder="Tu email"
+                required
+                alt="Campo para ingresara correo"
+              />
+              <input
+                type="password"
+                class="formregister-input"
+                placeholder="Tu nueva contraseña"
+                required
+                alt="Campo para ingresar contraseña"
+              />
+              <input
+                type="password"
+                class="formregister-input"
+                placeholder="Repite tu contraseña"
+                required
+                maxlength="16"
+                minlength="8"
+                alt="Repite tu contraseña"
+              />
+              <button
+                alt="Crear cuenta"
+                class="formregister-button"
+                action="submit"
+              >
+                Crear Cuenta
+              </button>
+            </div>
+          </form>
+          <div></div>
+        </div>
+        <div class="container-leyend">
+          <p alt="Ingresar si ya tienes cuenta ">
+            ¿Ya tienes cuenta? <a href="/login"><u>Inicia Sesión</u></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div><%- include('../partials/footer.ejs') %></div>
+  </body>
+</html>

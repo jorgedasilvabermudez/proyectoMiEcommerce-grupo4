@@ -1,0 +1,68 @@
+header{ 
+    display: flex;
+    height: 64px;
+    width: 100%;
+    background-color: #FFFFFF;
+    justify-content:space-evenly;
+    gap: 15px; 
+    align-items:center ;
+    align-content: stretch;
+    padding: 5px; 
+    border-bottom: 1px gray solid;
+}
+
+#search{
+    border-radius: 2px black solid;
+    display: flex;
+    height: 50%;
+    flex-grow: 2;
+}
+
+#searchBar{
+    border-radius: 20px;
+    width: 100%; 
+    height: 100%;
+    padding-left:16px ;
+    font-size: 14px;
+    font-weight:400 ;
+    
+}
+
+#search img{
+    position: relative;
+    right: 30px;
+}
+
+#header__profile__buttons{
+    display: flex;
+    gap: 5px;
+    max-height: 32px;
+}
+header a img{
+    max-height: 32px;
+}
+
+@media only screen and (min-width: 415px) {
+
+    #header__logo__small{
+        display: none;
+    }
+    #header__logo__big{
+        display: block;
+    }
+
+    #searchBar{
+        position: static;
+        border-radius: 20px;
+        width: 100%; 
+        height: 100%;
+        padding-left:16px ; 
+        font-size: 14px;
+        font-weight:400 ;    
+    }
+
+    header a img{
+        max-height: 32px;
+    }
+
+}
