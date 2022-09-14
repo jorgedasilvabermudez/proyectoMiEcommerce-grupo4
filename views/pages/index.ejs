@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,51 +9,49 @@
     <title>Index</title>
   </head>
   <body>
-    <%- include('../partials/header.ejs', { 
-      bigLogo: false,
-      smallLogo: true,
-      searchBox: true,
-      cartProfile: true
-      }) %> 
-    <section class="ProductHero">
-      <div></div>
-      <div class="ProductHeroCard">
-        <div class="ProductHeroBrandContainer">
-          <img src="/assets/disneybrand.png" />
-          <span>50% OFF en Combo Plus</span>
-          <span>Canjeando 50.000 puntos MiEcommerce.</span>
-        </div>
-      </div>
-      <div class="ProductHeroCard">
-        <div class="ProductHeroBrandContainer">
-          <img src="/assets/hbobrand.png" />
-          <span>50% OFF en Combo Plus</span>
-          <span>Canjeando 50.000 puntos MiEcommerce.</span>
-        </div>
-      </div>
-    </section>
-    <%- include('../partials/productCard') %>
-    <section class="MostRequested">
-      <h1>Los mas pedidos</h1>
-      <div class="ProductContainer">
-        <% for(let i = 10; i <=17; i++){%>
-        <article class="ProductCard" id="<%=products[i].id %>">
-          <img src="<%=products[i].images[1] %>" />
-          <div class="ProductCardSpecification">
-            <span><%=products[i].title %></span>
-            <div>
-              <span><%=products[i].rating.count %></span>
-              <span>Puntos</span>
-            </div>
+    <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true,
+    searchBox: true, cartProfile: true }) %>
+    <main id="mainIndex">
+      <section class="ProductHero">
+        <div></div>
+        <div class="ProductHeroCard">
+          <div class="ProductHeroBrandContainer">
+            <img src="/assets/disneybrand.png" />
+            <span>50% OFF en Combo Plus</span>
+            <span>Canjeando 50.000 puntos MiEcommerce.</span>
           </div>
-        </article>
-        <% }%>
-      </div>
-    </section>
-    <%- include('../partials/footer.ejs') %> 
+        </div>
+        <div class="ProductHeroCard">
+          <div class="ProductHeroBrandContainer">
+            <img src="/assets/hbobrand.png" />
+            <span>50% OFF en Combo Plus</span>
+            <span>Canjeando 50.000 puntos MiEcommerce.</span>
+          </div>
+        </div>
+      </section>
+      <%- include('../partials/productCard') %>
+      <section class="MostRequested">
+        <h1>Los mas pedidos</h1>
+        <div class="ProductContainer">
+          <% for(let i = 10; i <=17; i++){%>
+          <article class="ProductCard" id="<%=products[i].id %>">
+            <img src="<%=products[i].images[1] %>" />
+            <div class="ProductCardSpecification">
+              <span><%=products[i].title %></span>
+              <div>
+                <span><%=products[i].rating.count %></span>
+                <span>Puntos</span>
+              </div>
+            </div>
+          </article>
+          <% }%>
+        </div>
+      </section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
   </body>
   <script>
-    function redirect(productId) {
+    function redirect() {
       window.location.href = "http://localhost:3000/products";
     }
   </script>
