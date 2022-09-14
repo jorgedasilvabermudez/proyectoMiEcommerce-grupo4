@@ -18,8 +18,9 @@ Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House
 
 
 ## 🔗 Links
-https://drive.google.com/file/d/1t-mQGQF2xY7F4YviN-9D-m46y_xue40d/view
-
+Files: https://drive.google.com/file/d/1t-mQGQF2xY7F4YviN-9D-m46y_xue40d/view
+Trello: https://trello.com/b/jEpZIn5Y/1er-sprint
+Miro: https://miro.com/app/board/uXjVPYign9Q=/
 
 ## Tech Stack
 
