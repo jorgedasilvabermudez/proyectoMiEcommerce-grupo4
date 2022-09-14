@@ -10,7 +10,8 @@
   </head>
   <body>
     <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true,
-    searchBox: true, cartProfile: true }) %>
+    searchBox: true, cartProfile: true }) %> <%-
+    include('../partials/navbar.ejs')%>
     <main id="mainIndex">
       <section class="ProductHero">
         <div></div>
@@ -48,7 +49,8 @@
         </div>
       </section>
     </main>
-    <%- include('../partials/footer.ejs') %>
+    <%- include('../partials/navbar.ejs')%> <%-
+    include('../partials/footer.ejs') %>
   </body>
   <script>
     function redirect() {
