@@ -11,6 +11,16 @@ p {
     text-align: start;
 }
 
+.back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 3px;
+}
+
 /* PUNTOS */
 .img_point {
     height: 32px;
