@@ -55,6 +55,7 @@ h4 {
     /* CONTENEDOR EXTERNO */
     .imgs {
         display: flex;
+        max-width: min-content;
     }
 
     /* CONTENEDOR */
