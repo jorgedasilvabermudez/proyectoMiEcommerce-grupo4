@@ -1,116 +1,108 @@
 /* NAVBAR */
-@media (max-width: 415px) {
-    .nav-bar {
-        margin: 16px;
-        display: flex;
-        flex-direction: column;
-        max-width: 382px;
-        min-width: min-content;
-        border-radius: 16px;
-        background-color: #333333;
+@media (max-width: 451px) {
+  .nav-bar {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 382px;
+    min-width: min-content;
+    border-radius: 16px;
+    background-color: #333333;
+  }
+  hr {
+    display: none;
+  }
 
-    }
-    hr{
-        display: none;
-    }
+  .section-nav-bar {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .section-nav-bar {
-        margin: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .article a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6px 0px;
+  }
 
-    .article a {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 6px 0px;
+  .article h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0px 0px 0px 4px;
+    padding: 0%;
+  }
 
-    }
-
-    .article h2 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-        margin: 0px 0px 0px 4px;
-        padding: 0%;
-    }
-
-    .article img {
-        width: 16px;
-        height: 13.29px;
-        margin: 4px;
-    }
-
-
+  .article img {
+    width: 16px;
+    height: 13.29px;
+    margin: 4px;
+  }
 }
 
-@media (min-width: 415px) {
+@media (min-width: 450px) {
+  /* NAVBAR DESKTOP */
+  .nav-bar_container {
+    padding: 0 128px;
+    display: grid;
+    place-items: center;
+  }
+  .nav-bar {
+    display: flex;
+    height: 128px;
+    border-radius: 16px;
+    background-color: #333333;
+    margin: 24px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
+  }
 
-    /* NAVBAR DESKTOP */
-    .nav-bar_container{
-        margin-left: 128px;
-    
-    }
-    .nav-bar {
-        display: flex;
-        max-width: 1024px;
-        height: 128px;
-        border-radius: 16px;
-        background-color: #333333;
-        margin-left: 128px;
-        margin: 24px 0px;
-        align-items: center;
-        justify-content: center;
+  .section-nav-bar {
+    margin: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    }
+  .article a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    padding: 10px;
+  }
 
-    .section-nav-bar {
-        margin: 16px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  .article h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0px 0px 0px 4px;
+    padding: 0%;
+  }
 
-    }
+  .article img {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+  }
 
-    .article a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 112px;
-        height: 62px;
-
-    }
-
-    .article h2 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-        margin: 0px 0px 0px 4px;
-        padding: 0%;
-    }
-
-    .article img {
-        width: 40px;
-        height: 40px;
-        margin: 4px;
-    }
-
-    hr {
-        height: 96px;
-        right: 8px;
-    }
-
+  hr {
+    height: 96px;
+    right: 8px;
+  }
 }
