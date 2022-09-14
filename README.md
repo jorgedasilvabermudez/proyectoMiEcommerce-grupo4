@@ -35,7 +35,7 @@ Para iniciar el proyecto e instalar modulos de node, express
 y ejs
 
 ```bash
-  npm i -- para inicializar el proyecto
+  npm i -- para instalar modulos en el proyecto
   npm start -- para correr el servidor de express
 ```
 
