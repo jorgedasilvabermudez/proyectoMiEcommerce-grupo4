@@ -61,12 +61,6 @@ header a img{
         font-weight:400 ;    
     }
 
-    div span{
-        display: block;
-        position: absolute;
-        right:100px
-    }
-    
     header a img{
         max-height: 32px;
     }
