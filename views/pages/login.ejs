@@ -8,12 +8,8 @@
     <title>Document</title>
   </head>
   <body class="bodyregister">
-  <%- include('../partials/header.ejs', { 
-    bigLogo: true,
-    smallLogo: false,
-    searchBox: false,
-    cartProfile: false
-  }) %> 
+    <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+    searchBox: false, cartProfile: false }) %>
 
     <section class="section-register">
       <div class="background-top">
@@ -40,10 +36,12 @@
           <div></div>
         </div>
         <div class="container-leyend">
-          <p>¿No tienes cuenta? <a href="/register"><u>Registrate</u></a></p>
+          <p>
+            ¿No tienes cuenta? <a href="/register"><u>Registrate</u></a>
+          </p>
         </div>
       </div>
     </section>
-  <%- include('../partials/footer.ejs') %> 
+    <%- include('../partials/footer.ejs') %>
   </body>
 </html>
