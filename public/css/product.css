@@ -60,7 +60,7 @@ h4 {
 
 /* ROUTES */
 .routes {
-    margin: 16px 16px 0px 128px;
+    margin: 16px 16px 0px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
