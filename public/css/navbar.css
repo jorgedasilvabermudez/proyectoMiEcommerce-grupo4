@@ -1,11 +1,13 @@
 /* NAVBAR */
+/* MOBILE */
 @media (max-width: 451px) {
   .nav-bar {
     margin: 16px;
     display: flex;
     flex-direction: column;
     max-width: 382px;
-    min-width: min-content;
+    width: 90vh;
+    min-width: 85%;
     border-radius: 16px;
     background-color: #333333;
   }
@@ -46,12 +48,13 @@
   }
 }
 
+/* NAVBAR DESKTOP */
 @media (min-width: 450px) {
-  /* NAVBAR DESKTOP */
   .nav-bar_container {
-    padding: 0 128px;
     display: grid;
     place-items: center;
+    width: 100%;
+    padding: 0 128px;
   }
   .nav-bar {
     display: flex;
@@ -80,6 +83,7 @@
     align-items: center;
     height: 62px;
     padding: 10px;
+    min-width: 48px;
   }
 
   .article h2 {
