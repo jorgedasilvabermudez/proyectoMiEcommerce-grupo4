@@ -4,7 +4,7 @@
 
 # Sprint 1 
 
-
+https://docs.google.com/document/d/1-B7et0A7zeNiC7PkgZ1DgqBTANC6egx2Q-Yh7s2BCBQ/edit#
 
 Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House 
 
