@@ -9,6 +9,9 @@ header{
     align-content: stretch;
     padding: 5px; 
     border-bottom: 1px gray solid;
+    position: fixed;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 #search{

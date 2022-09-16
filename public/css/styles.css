@@ -10,20 +10,28 @@
 @import url('../css/product.css');
 @import url('../css/navbar.css');
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
 
 html{
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     background-color: #EFEFEF;
     font-size: 62.5%;
+    
 }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body{
     height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+  
+}
+
+main{
+    margin-top: 64px;
 }

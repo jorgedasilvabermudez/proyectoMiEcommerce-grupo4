@@ -10,9 +10,9 @@
   </head>
   <body>
     <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true,
-    searchBox: true, cartProfile: true }) %> <%-
-    include('../partials/navbar.ejs')%>
+    searchBox: true, cartProfile: true }) %>
     <main id="mainIndex">
+      <%- include('../partials/navbar.ejs')%>
       <section class="ProductHero">
         <div></div>
         <div class="ProductHeroCard">
@@ -48,9 +48,9 @@
           <% }%>
         </div>
       </section>
+      <%- include('../partials/navbar.ejs')%> 
     </main>
-    <%- include('../partials/navbar.ejs')%> <%-
-    include('../partials/footer.ejs') %>
+    <%-include('../partials/footer.ejs') %>
   </body>
   <script>
     function redirect() {
