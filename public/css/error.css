@@ -1,0 +1,56 @@
+.errorPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.errorSegundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorSegundo div span {
+    color: #818C8B;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.errorSegundo div p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+.errorTercero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 66px;
+    
+
+}
+
+
+
+
+
+.errorTercero div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26BFA6;
+    width: 168px;
+    height: 50px; 
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    
+    
+}

@@ -13,6 +13,7 @@ const registerRoutes = require("./registerRoutes");
   router.use('/', productRoutes);
   router.use('/products', productRoutes);//para que mande al index sino se indica id
   router.use('/register', registerRoutes);
+  
 
 
 module.exports = router
