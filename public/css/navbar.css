@@ -1,6 +1,6 @@
 /* NAVBAR */
 /* MOBILE */
-a{
+.article a{
   text-decoration: none;
 }
 @media (max-width: 451px) {
