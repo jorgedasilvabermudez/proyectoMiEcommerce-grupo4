@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
-
-const url = `http://localhost:6000/api/product/`;
+const API_PORT = process.env.API_PORT;
+const url = `http://localhost:${API_PORT}/api/product/`;
 
 async function getProductById(id) {
   const result = await fetch(`${url}${id}`);

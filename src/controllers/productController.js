@@ -17,12 +17,13 @@ const product = async (req, res) => {
 
 const index = async (req, res) => {
   const products = await getAllProduct();
+  console.log(products);
 
   //mas pedidos H#8
   const ordered = products.sort((a, b) => b.rating.count - a.rating.count);
   const moreCount = ordered.slice(0, 8);
   //productos sugerido H#7
-  suggestedProd = product.sort((a, b) => {
+  const suggestedProd = products.sort((a, b) => {
     b.rating.rate - a.rating.rate;
   });
 
