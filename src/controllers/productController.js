@@ -9,17 +9,19 @@ const getProduct = async (req, res) => {
   const results= await fetch(`http://localhost:6000/api/product`);
   const datas = await results.json();
 
-  res.render("product", { product : data, products: datas });
+  res.render("product", { product : data, products: datas, category });
 };
 
 const getProducts = async (req, res) => {
   const result= await fetch(`http://localhost:6000/api/product`);
   const data = await result.json();
-  //mas pedidos
+  //mas pedidos H#8
   const ordered= data.sort( (a, b)=>b.rating.count-a.rating.count);
   const moreCount=ordered.slice(0,8)
-  
-  res.render("index", { products : data, moreCount });
+  //productos sugerido H#7
+  suggestedProd=data.sort( (a, b)=>{b.rating.rate-a.rating.rate});
+
+  res.render("index", { products : suggestedProd, moreCount });
 };
 
 module.exports = {

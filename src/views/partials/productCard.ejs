@@ -1,8 +1,7 @@
 <section class="InterestProducts">
   <h1>Te puede interesar</h1>
   <div class="ProductContainer">
-    <% products=products.sort( (a, b)=>b.rating.rate-a.rating.rate);
-    for(let i = 0; i <=3; i++){%>
+    <% for(let i = 0; i <=3; i++){ %>
     <article class="ProductCard" id="<%=products[i].id %>"  onclick="redirect(<%= products[i].id %>)">
       <img src="<%=products[i].images[1] %>"
       onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
