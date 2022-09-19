@@ -1,15 +1,18 @@
 const express = require("express");
-const routes = express.Router();
+const router = express.Router();
 const carRoutes = require("./cartRoutes");
 const checkoutRoutes = require("./checkoutRoutes");
 const loginRoutes = require("./loginRoutes");
-const productRoutes = require("./productRoute");
+const productRoutes = require("./productRoute"); //unica que quedo en singular
 const registerRoutes = require("./registerRoutes");
 
-module.exports = (app) => {
-  app.use("/cart", carRoutes);
-  app.use("/checkout", checkoutRoutes);
-  app.use("/login", loginRoutes);
-  app.use("/products", productRoutes);
-  app.use("/register", registerRoutes);
-};
+
+  router.use('/cart', carRoutes);
+  router.use('/checkout', checkoutRoutes);
+  router.use('/login', loginRoutes);
+  router.use('/', productRoutes);
+  router.use('/products', productRoutes);//para que mande al index sino se indica id
+  router.use('/register', registerRoutes);
+
+
+module.exports = router

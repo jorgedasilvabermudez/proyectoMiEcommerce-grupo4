@@ -1,13 +1,14 @@
 <section class="InterestProducts">
   <h1>Te puede interesar</h1>
-  <div class="ProductContainer" onclick="redirect()">
-    <% for(let i = 15; i <=18; i++){%>
-    <article class="ProductCard" id="<%=products[i].id %>">
-      <img src="<%=products[i].images[1] %>" />
+  <div class="ProductContainer">
+    <% for(let i = 0; i <=3; i++){ %>
+    <article class="ProductCard" id="<%=products[i].id %>"  onclick="redirect(<%= products[i].id %>)">
+      <img src="<%=products[i].images[1] %>"
+      onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
       <div class="ProductCardSpecification">
         <span><%=products[i].title %></span>
         <div>
-          <span><%=products[i].rating.count %></span>
+          <span><%=products[i].price %></span>
           <span>Puntos</span>
         </div>
       </div>

@@ -18,31 +18,35 @@
                     <div class="routes">
                         <a href="/" class="back">
                             <img src="/assets/arrow-left.svg" /> Volver al listado </a> <a class="back"
-                            href="/product.html"> > Bebidas </a>
+                            href="/product.html"> > <%=product.category%></a>
                     </div>
                     <div class="img_container">
                         <div class="img_title">
                             <h3>
-                                <%=products[16].title%>
+                                <%=product.title%>
                             </h3>
                         </div>
                         <div class="img_galery">
-                            <img src="<%=products[16].images[3]%>" alt="">
+                            <img src="<%=product.images[3]%>" alt=""
+                            onerror="this.onerror=null; this.src='/img/imgFallBack.png'">
                         </div>
                         <div class="img_menu">
-                            <div><img src="<%=products[16].images[0]%>" alt="menu1"></div>
-                            <div><img src="<%=products[16].images[1]%>" alt="menu2"></div>
-                            <div><img src="<%=products[16].images[2]%>" alt="menu3"></div>
+                            <div><img src="<%=product.images[0]%>" alt="menu1"
+                                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"></div>
+                            <div><img src="<%=product.images[1]%>" alt="menu2"
+                                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"></div>
+                            <div><img src="<%=product.images[2]%>" alt="menu3"
+                                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"></div>
                         </div>
                         <div class="text-areas">
                             <div class="img_title-D">
                                 <h3>
-                                    <%=products[16].title%>
+                                    <%=product.title%>
                                 </h3>
                             </div>
                             <div class="img_point">
                                 <div>
-                                    <h4>19.900</h4>
+                                    <h4><%=product.price %></h4>
                                 </div>
                                 <div>
                                     <h5>PUNTOS</h5>
@@ -55,7 +59,7 @@
                             </div>
                             <div class="img_info">
                                 <p>
-                                    <%=products[16].description%>
+                                    <%=product.description%>
                                 </p>
                             </div>
                         </div>
@@ -76,7 +80,10 @@
         <%- include('../partials/footer.ejs') %>
 </body>
 <script>
-    w
+    function redirect(id) {
+      window.location.href =`http://localhost:3000/products/${id}`;
+    }
+    
 </script>
 
 </html>
