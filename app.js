@@ -9,11 +9,14 @@ app.set("views", "./src/views/pages");
 
 //rutas
 app.use('/',router)
-app.use('/error', (req,res)=>{
-  res.render('error')
+
+
+app.get('*', function(req, res){
+  res.status(404).render('error');
 });
 
 
 app.listen(3000, () => {
   console.log("Ecommerce started");
 });
+
