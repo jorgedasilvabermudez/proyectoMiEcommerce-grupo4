@@ -14,7 +14,7 @@ async function getAllProduct() {
 
   return datas;
 }
-//articulos para productCard
+//productos sugeridos H#10
 async function getSuggestedProductById(id) {
   const products = await getAllProduct();
   const product = await getProductById(id);
