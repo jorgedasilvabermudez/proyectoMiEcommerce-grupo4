@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-    
+        <div>
+            <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+            searchBox: false, cartProfile: false }) %>
+          </div>
 <main class="errorPrincipal">
     <div class="errorSegundo">
         <div>
@@ -29,6 +32,7 @@
     </div>
 </main>
 
+<div><%- include('../partials/footer.ejs') %></div>
 
 </body>
 </html>
