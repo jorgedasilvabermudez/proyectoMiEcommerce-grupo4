@@ -1,18 +1,20 @@
 const {
   getAllProduct,
   getProductById,
+  getSuggestedProductById,
 } = require("../../services/fetchProducts");
 
 const product = async (req, res) => {
   const { id } = req.params;
-  const [product, products] = await Promise.all([
+  const [product, suggestedProducts, products] = await Promise.all([
     getProductById(id),
+    getSuggestedProductById(id),
     getAllProduct(),
   ]);
 
   product
-    ? res.render("product", { product: product, products: products })
-    : res.render("productNotfound", { products });
+    ? res.render("product", { product: product, products: suggestedProducts })
+    : res.render("productNotfound", { products: products });
 };
 
 const index = async (req, res) => {
