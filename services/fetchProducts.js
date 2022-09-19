@@ -14,8 +14,19 @@ async function getAllProduct() {
 
   return datas;
 }
+//articulos para productCard
+async function getSuggestedProductById(id) {
+  const products = await getAllProduct();
+  const product = await getProductById(id);
+  const suggestedProducts = products.filter(
+    (p) => p.category === product.category
+  );
+
+  return suggestedProducts;
+}
 
 module.exports = {
   getAllProduct,
   getProductById,
+  getSuggestedProductById,
 };
