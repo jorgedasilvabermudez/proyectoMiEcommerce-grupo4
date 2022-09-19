@@ -9,7 +9,9 @@ const getProduct = async (req, res) => {
   const results= await fetch(`http://localhost:6000/api/product`);
   const datas = await results.json();
 
+
   res.render("product", { product : data, products: datas });
+
 };
 
 const getProducts = async (req, res) => {
