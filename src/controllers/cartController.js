@@ -1,10 +1,10 @@
-const fetch = require("node-fetch");
+const {getAllProduct} = require("../../services/fetchProducts");
 
-const getCart = async (req, res) => {
-  const result= await fetch(`http://localhost:6000/api/product`);
-  const data = await result.json();
+const cart = async (req, res) => {
+  //momentaneo sin carga de carrito
+  const products= await getAllProduct();
 
-  res.render("cart", { products: data});
+  res.render("cart", { products});
 };
 
-module.exports = getCart;
+module.exports = {cart};
