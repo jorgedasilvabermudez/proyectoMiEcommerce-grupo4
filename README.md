@@ -24,6 +24,9 @@ Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House
 [Trello](https://trello.com/b/jEpZIn5Y/1er-sprint) <br/>
 [Miro](https://miro.com/app/board/uXjVPYign9Q=/) <br/>
 
+API Repositorio
+ - https://gitlab.com/ftorresp/express-products-api
+
 ## Tech Stack
 
 **Client:** HTML, CSS, EJS
@@ -41,7 +44,7 @@ y ejs
 ```bash
   npm i -- para instalar modulos en el proyecto
   npm start -- para correr el servidor de express
-  Especificar puerto de la api y aplicacion en el archivo ".env"
+  Especificar los puertos de la API y APP en el archivo ".env"
 ```
 
 
@@ -99,29 +102,3 @@ Start the server
 ```bash
   npm run start
 ```
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
-
-## Demo
-
-Insert gif or link to demo
-
-
-## Lessons Learned
-
-What did you learn while building this project? What challenges did you face and how did you overcome them?
-
-
-
