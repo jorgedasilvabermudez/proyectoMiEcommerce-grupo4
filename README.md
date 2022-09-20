@@ -6,12 +6,14 @@
 
 https://docs.google.com/document/d/1-B7et0A7zeNiC7PkgZ1DgqBTANC6egx2Q-Yh7s2BCBQ/edit#
 
+# Sprint 2 - Actualmente 
+
 Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House 
 
 ## Participantes
 
- - [Jorge Da Silva](https://github.com/jorgedasilvabermudez)
- - [Maximiliano Caballo](https://github.com/MaximilianoCaballoCencosud)
+ - [Jorge Da Silva](https://github.com/jorgedasilvabermudez) - Lider Sprint I
+ - [Maximiliano Caballo](https://github.com/MaximilianoCaballoCencosud) - Lider Sprint II
  - [Nahuel Rodriguez](https://github.com/NicolasBuffa)
  - [Nicolas Buffa](https://github.com/)
  - [Sebastian Soria](https://github.com/soriagorgoroso)
@@ -31,12 +33,13 @@ Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House
 
 ## Deployment
 
-Para iniciar el proyecto e instalar modulos de node, express
+Para iniciar el proyecto e instalar modulos de node, express, dotenv
 y ejs
 
 ```bash
   npm i -- para instalar modulos en el proyecto
   npm start -- para correr el servidor de express
+  Especificar puerto de la api y aplicacion en el archivo ".env"
 ```
 
 
