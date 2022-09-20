@@ -12,9 +12,15 @@ const product = async (req, res) => {
     getAllProduct(),
   ]);
 
-  product
-    ? res.render("product", { product: product, products: suggestedProducts })
-    : res.render("productNotfound", { products: products });
+  product.status === 404
+    ? res.render("productNotFound", {
+        product: product,
+        products,
+      })
+    : res.render("product", {
+        product: product,
+        products: suggestedProducts,
+      });
 };
 
 const index = async (req, res) => {
