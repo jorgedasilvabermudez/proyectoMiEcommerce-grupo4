@@ -9,18 +9,19 @@
     <title>Checkout</title>
   </head>
   <body>
-  <%- include('../partials/header.ejs', {
-    bigLogo: true,
-    smallLogo: false,
-    searchBox: false,
-    cartProfile: false
-}) %> 
-  <main class="checkout_main">
-    <div class="checkout_container">
-      <h3>Page Not Implemented</h3>
-      <%- include('../partials/productCard.ejs')%>
-    </div>
-  </main>
-  <%- include('../partials/footer.ejs') %> 
-</body>
+    <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+    searchBox: false, cartProfile: false }) %>
+    <main class="checkout_main">
+      <div class="checkout_container">
+        <h3>Page Not Implemented</h3>
+        <%- include('../partials/productCard.ejs')%>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+  <script>
+    function redirect(id) {
+      window.location.href = `/products/${id}`;
+    }
+  </script>
 </html>
