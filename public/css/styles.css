@@ -11,6 +11,7 @@
 @import url("../css/navbar.css");
 @import url("../css/error.css");
 @import url("../css/checkout.css");
+@import url("../css/productNotFound.css");
 
 html {
   height: 100%;

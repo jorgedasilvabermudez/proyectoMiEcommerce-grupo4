@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Not Exist</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+    searchBox: false, cartProfile: false }) %>
+    <main class="NoExist">
+      <div class="NoExist_container">
+        <div class="NoExist_container-div">
+          <h3>Lo sentimos este poducto no fue encontrado</h3>
+          <span style="font-size: 60px">&#128517;</span>
+        </div>
+        <div class="NoExist_container-div2">
+          <h3>Opina sobre nuestro resultado de busqueda</h3>
+          <h2>Has encontrado lo que estabas buscando?</h2>
+          <div>
+            <button><span style="font-size: 10px">&#128077;</span></button>
+            <button><span style="font-size: 10px">&#128078;</span></button>
+          </div>
+          <h5>
+            Si necesitas ayuda o tienes alguna pregunta no dudes en acudir a
+            <a href="">Atencion al cliente</a>
+          </h5>
+        </div>
+      </div>
+    </main>
+    <%- include('../partials/productCard.ejs')%> <%-
+    include('../partials/footer.ejs') %>
+  </body>
+</html>
