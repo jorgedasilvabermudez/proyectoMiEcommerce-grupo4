@@ -42,7 +42,9 @@ Para iniciar el proyecto e instalar modulos de node, express, dotenv
 y ejs
 
 ```bash
+  git clone del repositorio
   npm i -- para instalar modulos en el proyecto
+  Especificar los puertos de la API y APP en el archivo ".env"
   npm start -- para correr el servidor de express
   Especificar los puertos de la API y APP en el archivo ".env"
 ```
@@ -76,29 +78,3 @@ Empresas involucradas
 
 - CENCOSUD
 - DIGITAL HOUSE
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
