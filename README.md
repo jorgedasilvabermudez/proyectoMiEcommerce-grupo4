@@ -30,6 +30,8 @@ Proyecto realizado por el equipo Nro4 en el marco educativo de Digital House
 
 **Server:** Node, Express
 
+**NPM:** dotenv, nodmeon, node-fetch
+
 
 ## Deployment
 
