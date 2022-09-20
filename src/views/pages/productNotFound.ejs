@@ -31,7 +31,14 @@
         </div>
       </div>
     </main>
-    <%- include('../partials/productCard.ejs')%> <%-
-    include('../partials/footer.ejs') %>
+    <div class="productCardNotFound">
+      <%- include('../partials/productCard.ejs')%>
+    </div>
+    <%- include('../partials/footer.ejs') %>
   </body>
+  <script>
+    function redirect(id) {
+      window.location.href = `/products/${id}`;
+    }
+  </script>
 </html>

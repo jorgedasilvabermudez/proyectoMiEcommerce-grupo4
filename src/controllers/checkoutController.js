@@ -1,9 +1,9 @@
 const fetch = require("node-fetch");
 const { getAllProduct } = require("../../services/fetchProducts");
+const { randomProducts } = require("../../services/helper");
 
 const getCheckout = async (req, res) => {
-  //Logica para obtener página checkout
-  const products = await getAllProduct()
+  const products = await randomProducts();
   res.render("checkout", { products: products });
 };
 

@@ -39,6 +39,11 @@
   width: 30px;
   /* background-color: blue; */
 }
+.productCardNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (max-width: 670px) {
   .NoExist_container {
     /* background-color: blue; */
