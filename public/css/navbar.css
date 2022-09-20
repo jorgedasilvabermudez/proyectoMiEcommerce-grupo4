@@ -1,5 +1,8 @@
 /* NAVBAR */
 /* MOBILE */
+.article a{
+  text-decoration: none;
+}
 @media (max-width: 451px) {
   .nav-bar {
     margin: 16px;

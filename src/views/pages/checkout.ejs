@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs', { bigLogo: true, smallLogo: false,
+    searchBox: false, cartProfile: false }) %>
+    <main class="checkout_main">
+      <div class="checkout_container">
+        <h3>Page Not Implemented</h3>
+        <%- include('../partials/productCard.ejs')%>
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+  <script>
+    function redirect(id) {
+      window.location.href = `/products/${id}`;
+    }
+  </script>
+</html>

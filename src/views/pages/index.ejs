@@ -34,13 +34,20 @@
       <section class="MostRequested">
         <h1>Los mas pedidos</h1>
         <div class="ProductContainer">
-          <% for(let i = 10; i <=17; i++){%>
-          <article class="ProductCard" id="<%=products[i].id %>">
-            <img src="<%=products[i].images[1] %>" />
+          <% for(let i = 0; i <=7; i++){%>
+          <article
+            class="ProductCard"
+            id="<%=moreCount[i].id %>"
+            onclick="redirect(<%= moreCount[i].id %>)"
+          >
+            <img
+              src="<%=moreCount[i].images[1] %>"
+              onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+            />
             <div class="ProductCardSpecification">
-              <span><%=products[i].title %></span>
+              <span><%=moreCount[i].title %></span>
               <div>
-                <span><%=products[i].rating.count %></span>
+                <span><%=moreCount[i].price%></span>
                 <span>Puntos</span>
               </div>
             </div>
@@ -48,13 +55,13 @@
           <% }%>
         </div>
       </section>
-      <%- include('../partials/navbar.ejs')%> 
+      <%- include('../partials/navbar.ejs')%>
     </main>
     <%-include('../partials/footer.ejs') %>
   </body>
   <script>
-    function redirect() {
-      window.location.href = "http://localhost:3000/products";
+    function redirect(id) {
+      window.location.href = `/products/${id}`;
     }
   </script>
 </html>

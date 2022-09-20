@@ -1,0 +1,25 @@
+<section class="InterestProducts">
+  <h1>Te puede interesar</h1>
+  <div class="ProductContainer">
+    <% for(let i = 0; i <=3; i++){ %>
+    <article
+      class="ProductCard"
+      id="<%= products[i].id %>"
+      onclick="redirect(<%= products[i].id %>)"
+    >
+      <!-- A ON CLICK -->
+      <img
+        src="<%=products[i].images[1] %>"
+        onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+      />
+      <div class="ProductCardSpecification">
+        <span><%=products[i].title %></span>
+        <div>
+          <span><%=products[i].price %></span>
+          <span>Puntos</span>
+        </div>
+      </div>
+    </article>
+    <% }%>
+  </div>
+</section>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true,
+    searchBox: true, cartProfile: true }) %>
+    <main>
+      <div class="container_product">
+        <div class="imgs">
+          <div class="routes">
+            <a href="/" class="back">
+              <img src="/assets/arrow-left.svg" /> Volver al listado
+            </a>
+            <a class="back" href="/product.html"> > <%=product.category%></a>
+          </div>
+          <div class="img_container">
+            <div class="img_title">
+              <h3><%=product.title%></h3>
+            </div>
+            <div class="img_galery">
+              <img
+                src="<%=product.images[1]%>"
+                alt=""
+                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+              />
+            </div>
+            <div class="img_menu">
+              <div>
+                <img
+                  src="<%=product.images[0]%>"
+                  alt="menu1"
+                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+                />
+              </div>
+              <div>
+                <img
+                  src="<%=product.images[1]%>"
+                  alt="menu2"
+                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+                />
+              </div>
+              <div>
+                <img
+                  src="<%=product.images[2]%>"
+                  alt="menu3"
+                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+                />
+              </div>
+            </div>
+            <div class="text-areas">
+              <div class="img_title-D">
+                <h3><%=product.title%></h3>
+              </div>
+              <div class="img_point">
+                <div>
+                  <h4><%=product.price %></h4>
+                </div>
+                <div>
+                  <h5>PUNTOS</h5>
+                </div>
+              </div>
+              <div class="img_button-D">
+                <a class="img_a" href="/cart"> Agregar Al Carrito </a>
+              </div>
+              <div class="img_info">
+                <p><%=product.description%></p>
+              </div>
+            </div>
+            <div class="img_button">
+              <a href="/cart" class="img_a"> Agregar Al Carrito </a>
+            </div>
+          </div>
+        </div>
+        <%- include('../partials/productCard.ejs') %>
+      </div>
+      <%- include('../partials/navbar.ejs') %>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+  <script>
+    function redirect(id) {
+      window.location.href = `http://localhost:3000/products/${id}`;
+    }
+  </script>
+</html>
