@@ -35,22 +35,20 @@
         <h1>Los mas pedidos</h1>
         <div class="ProductContainer">
           <% for(let i = 0; i <=7; i++){%>
-          <article
-            class="ProductCard"
-            id="<%=moreCount[i].id %>"
-            onclick="redirect(<%= moreCount[i].id %>)"
-          >
-            <img
-              src="<%=moreCount[i].images[1] %>"
-              onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
-            />
-            <div class="ProductCardSpecification">
-              <span><%=moreCount[i].title %></span>
-              <div>
-                <span><%=moreCount[i].price%></span>
-                <span>Puntos</span>
+          <article class="ProductCard" id="<%=moreCount[i].id %>">
+            <a href="<%=`/products/${moreCount[i].id}`%>">
+              <img
+                src="<%=moreCount[i].images[1] %>"
+                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
+              />
+              <div class="ProductCardSpecification">
+                <span><%=moreCount[i].title %></span>
+                <div>
+                  <span><%=moreCount[i].price%></span>
+                  <span>Puntos</span>
+                </div>
               </div>
-            </div>
+            </a>
           </article>
           <% }%>
         </div>
@@ -59,9 +57,5 @@
     </main>
     <%-include('../partials/footer.ejs') %>
   </body>
-  <script>
-    function redirect(id) {
-      window.location.href = `/products/${id}`;
-    }
-  </script>
+  <script></script>
 </html>
