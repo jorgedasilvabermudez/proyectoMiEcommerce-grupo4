@@ -35,7 +35,7 @@
                             </div>
                             <div class="cardButton">
                                 <button class="buttonQuitar">Quitar</button>
-                                <div class="counter"><button>-</button><span>2</span><button>+</button></div>
+                                <div class="counter"><button id="restarProducto">-</button><span>2</span><button id="sumarProducto">+</button></div>
                                 <p>
                                     <%= products[i].price %>
                                 </p>
@@ -55,7 +55,8 @@
         </div>
     </div>
 </main>
-<%- include('../partials/footer.ejs') %> 
+<%- include('../partials/footer.ejs') %>
+<script src="/js/carrito/carrito.js"></script> 
 </body>
 
 </html>

@@ -67,14 +67,14 @@
                 </div>
               </div>
               <div class="img_button-D">
-                <a class="img_a" href="/cart"> Agregar Al Carrito </a>
+                <a class="img_a"> Agregar Al Carrito </a>
               </div>
               <div class="img_info">
                 <p><%=product.description%></p>
               </div>
             </div>
             <div class="img_button">
-              <a href="/cart" class="img_a"> Agregar Al Carrito </a>
+              <a href="" class="img_a"> Agregar Al Carrito </a>
             </div>
           </div>
         </div>
@@ -83,10 +83,6 @@
       <%- include('../partials/navbar.ejs') %>
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/carrito/productCarrito.js"></script>
   </body>
-  <script>
-    function redirect(id) {
-      window.location.href = `http://localhost:3000/products/${id}`;
-    }
-  </script>
 </html>
