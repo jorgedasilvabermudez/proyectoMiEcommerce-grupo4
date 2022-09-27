@@ -15,39 +15,33 @@
     <section class="section-register">
       <div class="background-top">
         <div class="container-formregister">
-          <form action="/" class="formregister">
+          <form action="/" class="formregister" name="register">
             <h1 class="formregister-title">¡Registrate!</h1>
             <div class="formregister-containerInput">
-              <input
-                type="email"
-                class="formregister-input"
-                placeholder="Tu email"
-                required
-                alt="Campo para ingresara correo"
-              />
-              <input
-                type="password"
-                class="formregister-input"
-                placeholder="Tu nueva contraseña"
-                required
-                alt="Campo para ingresar contraseña"
-              />
-              <input
-                type="password"
-                class="formregister-input"
-                placeholder="Repite tu contraseña"
-                required
-                maxlength="16"
-                minlength="8"
-                alt="Repite tu contraseña"
-              />
-              <button
-                alt="Crear cuenta"
-                class="formregister-button"
-                action="submit"
-              >
+              <div>
+                <input id="nameRegister" type="text" class="formregister-input" placeholder="Tu nombre" required
+                  alt="Campo para ingresara nombre" name="nombre"/>
+                  <span id="spanNameRegister"></span>
+              </div>
+              <div>
+                <input id="surnameRegister" type="text" class="formregister-input" placeholder="Tu apellido" required name="apellido"
+                  alt="Campo para ingresara apellido" />
+              </div>
+              <div>
+                <input id="emailRegister" type="email" class="formregister-input" placeholder="Tu email" required name="email"
+                  alt="Campo para ingresara correo" />
+              </div>
+              <div>
+                <input id="passwordRegister" type="password" class="formregister-input" placeholder="Tu nueva contraseña" required
+                  alt="Campo para ingresar contraseña" name="password"/>
+              </div>
+              <div>
+                <input id="passwordRegister2" type="password" class="formregister-input" placeholder="Repite tu contraseña" required
+                  maxlength="16" minlength="8" alt="Repite tu contraseña" name="password2"/>
+              </div>
+              <button  alt="Crear cuenta" class="formregister-button" action="submit">
                 Crear Cuenta
-              </button>
+              </button >
             </div>
           </form>
           <div></div>
@@ -60,5 +54,6 @@
       </div>
     </section>
     <div><%- include('../partials/footer.ejs') %></div>
+    <script src="/js/register.js"></script>
   </body>
 </html>
