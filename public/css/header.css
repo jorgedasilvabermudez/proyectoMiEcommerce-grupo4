@@ -51,7 +51,7 @@ header a img {
   flex-direction: column;
   position: fixed;
   top: 65px;
-  right: -50px;
+  right: 0px;
   background-color: #333333;
   box-shadow: -1em 0 2em black;
   /* border: solid 1px black; */

@@ -1,37 +1,50 @@
 <header>
-    <!-- logos small/big -->    
-    <% if(locals.smallLogo && smallLogo===true){  %> 
-        <a href="/">
-            <picture>
-                <source media="(min-width: 415px)" srcset="/img/MiEcommerce.png">
-                <img src="/img/MiE.png"  alt="MiEcommerce logo">
-            </picture><% } %> 
-        </a>
-    <!-- logos big-->
-    <% if(locals.bigLogo && bigLogo===true){  %> 
-        <a href="/">
-            <img id="header__logo__big" src="/img/MiEcommerce.png" alt="logo MiEcommerce">
-        </a>
-    <% } %> 
-    <!-- search bar -->
-    <div id="search">
-        <% if(locals.searchBox && searchBox===true){  %> 
-        <input type="text" name="searchBar" id="searchBar" placeholder="Buscar productos...">
-        <img src="/assets/magnify.svg" alt="">
-        <% } %> 
-    </div>
-    <!-- buttons   -->
-    <% if(locals.cartProfile && cartProfile===true){  %> 
-    <div id="header__profile__buttons">
-        <a href="/cart">
-            <img src="/img/Status=Default, Notification=Yes, Type=Default.png" alt="cart">
-        </a>
-        <a href="/login">
-            <picture>
-                <source media="(min-width: 415px)" srcset="/img/profilename.png">
-                <img src="/img/Property 1=Default, Text=True.png"  alt="profile logo">
-            </picture> 
-        </a>   
-    </div>
-    <% } %> 
+  <!-- logos small/big -->
+  <% if(locals.smallLogo && smallLogo===true){ %>
+  <a href="/">
+    <picture>
+      <source media="(min-width: 415px)" srcset="/img/MiEcommerce.png" />
+      <img src="/img/MiE.png" alt="MiEcommerce logo" /> </picture
+    ><% } %>
+  </a>
+  <!-- logos big-->
+  <% if(locals.bigLogo && bigLogo===true){ %>
+  <a href="/">
+    <img
+      id="header__logo__big"
+      src="/img/MiEcommerce.png"
+      alt="logo MiEcommerce"
+    />
+  </a>
+  <% } %>
+  <!-- search bar -->
+  <div id="search">
+    <% if(locals.searchBox && searchBox===true){ %>
+    <input
+      type="text"
+      name="searchBar"
+      id="searchBar"
+      placeholder="Buscar productos..."
+    />
+    <img src="/assets/magnify.svg" alt="" />
+    <% } %>
+  </div>
+  <!-- buttons   -->
+  <% if(locals.cartProfile && cartProfile===true){ %>
+  <div id="header__profile__buttons">
+    <a href="/cart">
+      <img
+        src="/img/Status=Default, Notification=Yes, Type=Default.png"
+        alt="cart"
+      />
+    </a>
+    <a id="menuAction">
+      <picture>
+        <source media="(min-width: 415px)" srcset="/img/profilename.png" />
+        <img src="/img/Property 1=Default, Text=True.png" alt="profile logo" />
+      </picture>
+    </a>
+  </div>
+  <% } %> <%- include('../partials/menu.ejs') %>
+  <script src="/js/header.js"></script>
 </header>
