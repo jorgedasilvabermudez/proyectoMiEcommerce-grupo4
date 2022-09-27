@@ -92,7 +92,7 @@ function pintarProductosEnVista(cartDetail, userCart) {
     let { quantity } = userCart.find((element) => element.id === product.id);
 
     let article = document.createElement("article");
-    totalPrice += product.price;
+    totalPrice += quantity * product.price;
     article.innerHTML = `
     <article class="articleCard">
     <div class="cardInfromation">
