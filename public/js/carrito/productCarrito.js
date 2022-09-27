@@ -20,32 +20,36 @@ const usuarioEnLocalStorage = JSON.parse(localStorage.getItem("usuario"));
 btnAgregarCarritoDesktop.addEventListener("click", async () => {
   if (usuarioEnLocalStorage) {
     //Está logueado
-    const data = await agregarProducto(idProducto);
-    console.log(data);
+    try {
+      await agregarProducto(idProducto);
+      //Redirecciono a página cart con el id del usuario para hacer la busqueda del carrito y listar
+      //a.href = `${window.location.origin}/cart/${usuarioEnLocalStorage.id}`;
+      window.location.href = `${window.location.origin}/cart`;
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
   } else {
     //No está logueado
-    redirectLogin(btnAgregarCarritoDesktop);
+    alert(
+      "Para agregar un producto al carrito tiene que haberse logueado previamente."
+    );
   }
 });
 btnAgregarCarritoMobile.addEventListener("click", async () => {
   if (usuarioEnLocalStorage) {
     //Está logueado
-    const data = await agregarProducto(idProducto);
-    console.log(data);
+    await agregarProducto(idProducto);
+    //a.href = `${window.location.origin}/cart/${usuarioEnLocalStorage.id}`;
+    window.location.href = `${window.location.origin}/cart`;
   } else {
     //No está logueado
-    redirectLogin(btnAgregarCarritoMobile);
+    alert(
+      "Para agregar un producto al carrito tiene que haberse logueado previamente."
+    );
   }
 });
 
-function redirectLogin() {
-  alert(
-    "Para agregar un producto al carrito tiene que haberse logueado previamente."
-  );
-
-  //a.href = "http://localhost:3000/login";
-  a.href = window.location.href;
-}
 async function agregarProducto(idProducto) {
   try {
     const body = {
@@ -54,7 +58,6 @@ async function agregarProducto(idProducto) {
         id: idProducto,
       },
     };
-    console.log(JSON.stringify(body));
     const response = await fetch("http://localhost:4000/api/cart", {
       method: "POST",
       headers: {
