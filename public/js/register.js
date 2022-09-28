@@ -31,7 +31,7 @@ window.addEventListener('load',()=>{
             const data= await response.json();
             const msgError=data.error;
                 if(response.status===409){customAlert(msgError);}
-                if(response.status===201)window.location.href='/';
+                if(response.status===201)window.location.href='/login';
         } catch (error) {
             console.log(error)
             return error

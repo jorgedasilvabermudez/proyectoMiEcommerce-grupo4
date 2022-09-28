@@ -89,7 +89,6 @@ function validacionEmail() {
         const error = errors[i];
         ulCampo.innerHTML += `<li> ${error} </li>`;
     }
-    debugger
     if (errors.length === 0) {
         emailValido = true;
         button.disabled=false;
