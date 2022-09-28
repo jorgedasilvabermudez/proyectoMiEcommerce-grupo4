@@ -15,16 +15,24 @@
     <section class="section-register">
       <div class="background-top">
         <div class="container-formregister">
-          <form action="/" class="formregister">
+          <form action="/" class="formregister" name="login">
             <h1 class="formregister-title">¡Hola!</h1>
             <div class="formregister-containerInput">
+              <ul id="ulLoginUser"></ul>
+
               <input
+              id="userLogin"
+              name="user"
                 type="text"
                 class="formregister-input"
                 placeholder="Tu nombre de usuario"
                 alt="Ingresa tu nombre de usuario"
               />
+              <ul id="ulLoginPass"></ul>
+
               <input
+              name="password"
+              id="passwordLogin"
                 type="password"
                 class="formregister-input"
                 placeholder="Tu contraseña"
@@ -32,6 +40,8 @@
               />
 
               <button
+              disabled="true"
+              id="btnLogin"
                 alt="Iniciar sesion"
                 class="formregister-button"
                 action="submit"
@@ -51,5 +61,6 @@
     </section>
   </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="js/validacionLogin.js"></script>
   </body>
 </html>
