@@ -19,27 +19,33 @@
             <h1 class="formregister-title">¡Registrate!</h1>
             <div class="formregister-containerInput">
               <div>
+                <ul id="ulNameRegister">
+                </ul>
                 <input id="nameRegister" type="text" class="formregister-input" placeholder="Tu nombre" required
                   alt="Campo para ingresara nombre" name="nombre"/>
                   <span id="spanNameRegister"></span>
               </div>
               <div>
+                <ul id="ulSurnameRegister"></ul>
                 <input id="surnameRegister" type="text" class="formregister-input" placeholder="Tu apellido" required name="apellido"
                   alt="Campo para ingresara apellido" />
               </div>
               <div>
+                <ul id="ulEmailRegister"></ul>
                 <input id="emailRegister" type="email" class="formregister-input" placeholder="Tu email" required name="email"
                   alt="Campo para ingresara correo" />
               </div>
               <div>
+                <ul id="ulPass1Register"></ul>
                 <input id="passwordRegister" type="password" class="formregister-input" placeholder="Tu nueva contraseña" required
                   alt="Campo para ingresar contraseña" name="password"/>
               </div>
               <div>
+                <ul id="ulPass2Register"></ul>
                 <input id="passwordRegister2" type="password" class="formregister-input" placeholder="Repite tu contraseña" required
                   maxlength="16" minlength="8" alt="Repite tu contraseña" name="password2"/>
               </div>
-              <button  alt="Crear cuenta" class="formregister-button" action="submit">
+              <button id="btnCreate"  disabled="true"  alt="Crear cuenta" class="formregister-button" action="submit">
                 Crear Cuenta
               </button >
             </div>
@@ -56,5 +62,7 @@
     </section>
     <div><%- include('../partials/footer.ejs') %></div>
     <script src="/js/register.js"></script>
+    <script src="/js/validacionRegister.js"></script>
+
   </body>
 </html>

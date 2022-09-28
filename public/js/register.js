@@ -25,6 +25,7 @@ window.addEventListener('load',()=>{
                 "Content-Type": "application/json"
             }
         };
+
         try {
             const response = await fetch("http://localhost:4000/api/user",settings)
             const data= await response.json();
