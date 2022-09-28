@@ -23,7 +23,7 @@ window.addEventListener('load',()=>{
             }
         };
 
-        const response = await fetch("http://localhost:4000/api/user",settings)
+        const response = await fetch("http://localhost:5000/api/user",settings)
             .then((response)=>{
                 if(response.status===405)alert("El correo electrónico ya existe.");
                 if(response.status===201)window.location.href='/';
