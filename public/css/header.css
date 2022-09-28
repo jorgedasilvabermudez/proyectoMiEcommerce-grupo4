@@ -290,3 +290,29 @@ header a img {
     max-height: 32px;
   }
 }
+/* STYLE PARA ICONO CUANDO NO ESTAS LOGEADO */
+#invitado{   
+  width: 118px;
+  height: 32px;
+  border-radius: 20px;
+  text-align: center;
+}
+#invitado div{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#invitado div  a{
+  width: 49%;
+  color: gray;
+  text-decoration: none;
+
+}
+/* #header__profile__buttons */
+#invitado hr{
+  display: inline;
+  max-height: 32px;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
