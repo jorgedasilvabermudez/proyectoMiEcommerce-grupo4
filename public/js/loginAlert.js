@@ -1,13 +1,13 @@
 window.addEventListener('load',()=>{
 
     let form = document.forms.login;
-    let { usuario, password }=form.elements;
+    let { user, password }=form.elements;
     let buttonTry= document.querySelector("#try"); 
     let modal= document.querySelector('.modal')
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        loginCheck(usuario, password );
+        loginCheck(user, password );
         buttonTry.style.display='flex'
     })
 
