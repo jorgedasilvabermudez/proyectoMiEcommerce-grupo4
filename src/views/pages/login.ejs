@@ -27,6 +27,7 @@
                 class="formregister-input"
                 placeholder="Tu nombre de usuario"
                 alt="Ingresa tu nombre de usuario"
+                name="usuario"
               />
               <ul id="ulLoginPass"></ul>
 
@@ -37,6 +38,7 @@
                 class="formregister-input"
                 placeholder="Tu contraseña"
                 alt="Ingresa tu contraseña"
+                name="password"
               />
 
               <button
@@ -59,8 +61,10 @@
         </div>
       </div>
     </section>
-  </main>
+    <%- include('../partials/alert') %>
+    </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/loginAlert.js"></script>
     <script src="js/validacionLogin.js"></script>
   </body>
 </html>
