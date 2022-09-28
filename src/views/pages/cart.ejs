@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Cart</title>
-</head>
-<body>
-<%- include('../partials/header.ejs', { 
-    bigLogo: false,
-    smallLogo: true,
-    searchBox: true,
-    cartProfile: true
-    }) %> 
-<main>
-    <div class="divCartMajor">
+  </head>
+  <body>
+    <%- include('../partials/header.ejs', { bigLogo: false, smallLogo: true,
+    searchBox: true, cartProfile: true }) %>
+    <main>
+      <div class="divCartMajor">
         <div class="divCartSecond">
-            <div>
-                <a href="/products" class="back"><img src="/assets/arrow-left.svg" alt="">Volver</a>
-            </div>
+          <div>
+            <a href="/products" class="back"
+              ><img src="/assets/arrow-left.svg" alt="" />Volver</a
+            >
+          </div>
 
-            <section>
-                <h1 class="titleCart">Productos en tu Carrito</h1>
-
-                    <% for(let i=10; i<14; i++) { %>
-                        <article class="articleCard">
-                            <div class="cardInfromation">
-                                <img class="card__img" src="<%= products[i].images[1] %>" alt="">
-                                <p>
-                                    <%= products[i].description %> lore
-                                </p>
-                            </div>
-                            <div class="cardButton">
-                                <button class="buttonQuitar">Quitar</button>
-                                <div class="counter"><button>-</button><span>2</span><button>+</button></div>
-                                <p>
-                                    <%= products[i].price %>
-                                </p>
-                            </div>
-
-                        </article class="articleCard">
-                        <% } %>
-                            <div class="divPagar">
-                                <p > Total de Puntos </p>
-                                <p class="totalPrice"> 30.000 </p>
-                            </div>
-
-                            <div class="divButton">
-                                <a href="/checkout">Ir a Pagar</a>
-                            </div>
-            </section>
+          <section id="cartSection">
+            <h1 class="titleCart">Productos en tu Carrito</h1>
+          </section>
         </div>
-    </div>
-</main>
-<%- include('../partials/footer.ejs') %> 
-</body>
-
+      </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    <script src="/js/carrito/carrito.js"></script>
+  </body>
 </html>

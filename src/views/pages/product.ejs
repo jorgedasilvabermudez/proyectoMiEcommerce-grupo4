@@ -25,33 +25,31 @@
               <h3><%=product.title%></h3>
             </div>
             <div class="img_galery">
-              <img
-                src="<%=product.images[1]%>"
-                alt=""
-                onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
-              />
+              <img class="galeryProduct" src="<%=product.images[1]%>" alt=""
+                onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
             </div>
             <div class="img_menu">
               <div>
-                <img
-                  src="<%=product.images[0]%>"
-                  alt="menu1"
-                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
-                />
+                <a id="a_menu">
+                  <img class="menuImg" src="<%=product.images[0]%>" alt="menu1"
+                    onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
+                </a>
               </div>
               <div>
-                <img
-                  src="<%=product.images[1]%>"
+                <a id="a_menu">
+                  <img class="menuImg" 
+                  src="<%=product.images[1]%>" 
                   alt="menu2"
-                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
-                />
+                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
+                </a>
               </div>
               <div>
-                <img
-                  src="<%=product.images[2]%>"
+                <a id="a_menu">
+                  <img class="menuImg" 
+                  src="<%=product.images[0]%>" 
                   alt="menu3"
-                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'"
-                />
+                  onerror="this.onerror=null; this.src='/img/imgFallBack.png'" />
+                </a>
               </div>
             </div>
             <div class="text-areas">
@@ -67,14 +65,14 @@
                 </div>
               </div>
               <div class="img_button-D">
-                <a class="img_a" href="/cart"> Agregar Al Carrito </a>
+                <a class="img_a" href=""> Agregar Al Carrito </a>
               </div>
               <div class="img_info">
                 <p><%=product.description%></p>
               </div>
             </div>
             <div class="img_button">
-              <a href="/cart" class="img_a"> Agregar Al Carrito </a>
+              <a href="" class="img_a"> Agregar Al Carrito </a>
             </div>
           </div>
         </div>
@@ -83,10 +81,7 @@
       <%- include('../partials/navbar.ejs') %>
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/carrito/productCarrito.js"></script>
+    <script src="/js/product.js"></script>
   </body>
-  <script>
-    function redirect(id) {
-      window.location.href = `http://localhost:3000/products/${id}`;
-    }
-  </script>
 </html>
