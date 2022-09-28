@@ -43,7 +43,7 @@
               <div>
                 <ul id="ulPass2Register"></ul>
                 <input id="passwordRegister2" type="password" class="formregister-input" placeholder="Repite tu contraseña" required
-                  maxlength="16" minlength="8" alt="Repite tu contraseña" name="password2"/>
+                  alt="Repite tu contraseña" name="password2"/>
               </div>
               <button id="btnCreate"  disabled="true"  alt="Crear cuenta" class="formregister-button" action="submit">
                 Crear Cuenta
@@ -58,6 +58,7 @@
           </p>
         </div>
       </div>
+      <%- include('../partials/alert') %>
     </section>
     <div><%- include('../partials/footer.ejs') %></div>
     <script src="/js/register.js"></script>

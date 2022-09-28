@@ -1,19 +1,18 @@
 window.addEventListener('load',()=>{
-    
-    let form = document.forms.register;
-    let { nombre, apellido, email, password, password2}=form.elements;
+
+    let form = document.forms.login;
+    let { user, password }=form.elements;
     let buttonTry= document.querySelector("#try"); 
-    let modal= document.querySelector('.modal');
+    let modal= document.querySelector('.modal')
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        registerUser(nombre, apellido, email, password );    
+        loginCheck(user, password );
+        buttonTry.style.display='flex'
     })
 
-    const registerUser= async(nombre,apellido,email,password)=>{
+    const loginCheck= async(email,password)=>{
         let data={
-            firstname: nombre.value,
-            lastname: apellido.value,
             email: email.value,
             password: password.value
         };
@@ -27,23 +26,23 @@ window.addEventListener('load',()=>{
         };
 
         try {
-            const response = await fetch("http://localhost:4000/api/user",settings)
-            const data= await response.json();
-            const msgError=data.error;
-                if(response.status===409){customAlert(msgError);}
-                if(response.status===201)window.location.href='/login';
+            const response = await fetch("http://localhost:4000/api/user/login",settings)
+            const data = await response.json();
+            let msgError=data.error;
+            if(response.status!==200){customAlert(msgError);}
+            if(response.status===200){window.location.href='/';}
         } catch (error) {
             console.log(error)
             return error
-        }
-    };
+        }    
+    }
 
-    //alert msg
+//alert msg
     function customAlert(msg){
         let hContent= document.querySelector('#h1__msg')
         let pContent= document.querySelector('#p__msg')
         pContent.innerText= msg;
-        hContent.innerText= "Error de Registro";
+        hContent.innerText= "Error de Login";
         modal.style.display='flex'
     }
 
@@ -51,4 +50,5 @@ window.addEventListener('load',()=>{
     buttonTry.addEventListener('click', ()=>{
         modal.style.display='none'
     })
-});
+
+})
