@@ -38,7 +38,10 @@
                 placeholder="Tu contraseña"
                 alt="Ingresa tu contraseña"
               />
-
+              <span>
+                <input type="checkbox" name="checkbox" checked="true" > Quieres mantener tu cuenta
+                iniciada?
+              </span>
               <button
               disabled="true"
               id="btnLogin"
@@ -64,5 +67,6 @@
     <%- include('../partials/footer.ejs') %>
     <script src="/js/loginAlert.js"></script>
     <script src="js/validacionLogin.js"></script>
+    <script src="/js/login.js"></script>
   </body>
 </html>

@@ -32,19 +32,31 @@
   <!-- buttons   -->
   <% if(locals.cartProfile && cartProfile===true){ %>
   <div id="header__profile__buttons">
-    <a href="/cart">
-      <img
-        src="/img/Status=Default, Notification=Yes, Type=Default.png"
-        alt="cart"
-      />
-    </a>
-    <a id="menuAction">
-      <picture>
-        <source media="(min-width: 415px)" srcset="/img/profilename.png" />
-        <img src="/img/Property 1=Default, Text=True.png" alt="profile logo" />
-      </picture>
-    </a>
+    <article id="logeado">
+      <a href="/cart">
+          <img src="/img/Status=Default, Notification=Yes, Type=Default.png" alt="cart" />
+      </a>
+      <a id="menuAction">
+          <picture>
+              <source media="(min-width: 415px)" srcset="/img/profilename.png" />
+              <img src="/img/Property 1=Default, Text=True.png" alt="profile logo" />
+          </picture>
+      </a>
+  </article>
+  <article id="invitado">
+      <div>
+          <a href="/login">
+              Login
+          </a>
+          <hr>
+          <a href="/register">
+              Registrate
+          </a>
+      </div>
+  </article>
+
   </div>
   <% } %> <%- include('../partials/menu.ejs') %>
   <script src="/js/header.js"></script>
+  <script src="/js/logedHeader.js"></script>
 </header>

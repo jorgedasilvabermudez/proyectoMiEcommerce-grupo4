@@ -1,28 +1,30 @@
-// -------- Datos de prueba ---------
-const usuario = JSON.stringify({
-  id: 0,
-  name: "maxi",
-  email: "maxi@caballo.com",
-});
-//localStorage.setItem("usuario", usuario);
-//localStorage.removeItem("usuario");
-const usuarioEnLocalStorage = JSON.parse(localStorage.getItem("usuario"));
-// -------- Datos de prueba ---------
 
+
+
+
+
+
+
+
+
+
+
+
+const usuarioEnLocalStorage = JSON.parse(localStorage.getItem("usuario"));
+console.log(usuarioEnLocalStorage)
 window.addEventListener("load", async () => {
   try {
     const userCart = await getUserCart(usuarioEnLocalStorage.id); //Carrito como viene de la API
     //Si hay error redirect a Index
-    if (userCart.status === 404)
-      window.location.href = `${window.location.origin}`;
+    console.log(userCart);
+    if (userCart.status === 404){}
+      // window.location.href = `${window.location.origin}`;
 
     const userCartDetail = await getUserCartDetail(userCart); //Carrito con detalle para mostrar en vista
     pintarProductosEnVista(userCartDetail, userCart); //User cart es para pintar la cantidad
-
     const restarProducto = document.querySelectorAll(".restarProducto");
     const sumarProducto = document.querySelectorAll(".sumarProducto");
     const eliminarProducto = document.querySelectorAll(".buttonQuitar");
-
     eliminarProducto.forEach((btn) => {
       btn.addEventListener("click", async () => {
         await deleteProduct(btn.dataset.id);
@@ -46,8 +48,9 @@ window.addEventListener("load", async () => {
     return error;
   }
 });
-
 //FUNCIONES
+
+
 //Api carrito sin detalle
 async function getUserCart(userId) {
   const url = `http://localhost:4000/api/cart/`;

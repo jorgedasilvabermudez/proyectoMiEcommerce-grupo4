@@ -2,20 +2,11 @@ const btnAgregarCarritoDesktop = document.querySelector(".img_button-D");
 const btnAgregarCarritoMobile = document.querySelector(".img_button");
 const a = document.querySelector(".img_a");
 
+
 const path = window.location.href;
 const idProducto = Number(path.slice(path.lastIndexOf("/") + 1));
 
-// -------- Datos de prueba ---------
-const usuario = JSON.stringify({
-  id: 0,
-  name: "maxi",
-  email: "maxi@caballo.com",
-});
-localStorage.setItem("usuario", usuario);
-//localStorage.removeItem("usuario");
 const usuarioEnLocalStorage = JSON.parse(localStorage.getItem("usuario"));
-// -------- Datos de prueba ---------
-
 //Agregar producto
 btnAgregarCarritoDesktop.addEventListener("click", async () => {
   if (usuarioEnLocalStorage) {
@@ -40,8 +31,7 @@ btnAgregarCarritoMobile.addEventListener("click", async () => {
   if (usuarioEnLocalStorage) {
     //Está logueado
     await agregarProducto(idProducto);
-    //a.href = `${window.location.origin}/cart/${usuarioEnLocalStorage.id}`;
-    window.location.href = `${window.location.origin}/cart`;
+    //a.href = `${window.location.origin}/cart/${usuarioEnLocalStorage.id}`;  
   } else {
     //No está logueado
     alert(
@@ -53,7 +43,7 @@ btnAgregarCarritoMobile.addEventListener("click", async () => {
 async function agregarProducto(idProducto) {
   try {
     const body = {
-      userId: 0,
+      userId: usuarioEnLocalStorage.id,
       product: {
         id: idProducto,
       },
