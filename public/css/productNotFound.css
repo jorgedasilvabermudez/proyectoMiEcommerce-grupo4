@@ -3,23 +3,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 40px;
 }
 
 .NoExist_container-div {
-  /* display: flex; */
-  /* border: solid 3px red; */
   height: 240px;
   padding-top: 30px;
   text-align: center;
+  padding: 20px;
 }
 
 .NoExist_container-div2 {
-  /* display: flex;  */
   flex-direction: column;
-  /* border: solid 3px black; */
   height: 240px;
-  /* padding-top: 50px; */
-  /* width: 300px; */
+  border-left: solid 1px black;
+  padding: 20px;
 }
 .NoExist_container-div2 h3 {
   text-align: center;
@@ -37,7 +35,6 @@
   border-radius: 40px;
   padding: 5px;
   width: 30px;
-  /* background-color: blue; */
 }
 .productCardNotFound {
   display: flex;
@@ -46,17 +43,16 @@
 }
 @media only screen and (max-width: 670px) {
   .NoExist_container {
-    /* background-color: blue; */
     flex-direction: column;
   }
   .NoExist_container-div2 {
     flex-direction: row;
-    /* width: 80vw; */
+    border-left: solid 0px black;
+    border-top: solid 1px black;
   }
 }
 @media only screen and (min-width: 800px) {
   .NoExist_container-div2 {
-    /* background-color: red; */
     padding-top: 50px;
   }
   .NoExist_container-div {
