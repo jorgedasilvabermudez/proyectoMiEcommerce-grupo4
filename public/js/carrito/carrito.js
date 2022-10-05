@@ -34,6 +34,7 @@ window.addEventListener("load", async () => {
     sumarProducto.forEach((btn) => {
       btn.addEventListener("click", async () => {
         await addProduct(btn.dataset.id, userCart);
+        // reload dentro de AddProduct
         document.location.reload();
       });
     });

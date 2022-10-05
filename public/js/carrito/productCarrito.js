@@ -43,6 +43,8 @@ btnAgregarCarritoMobile.addEventListener("click", async () => {
   }
 });
 
+
+
 async function agregarProducto(idProducto) {
   try {
     const body = {
