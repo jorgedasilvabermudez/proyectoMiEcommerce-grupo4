@@ -5,6 +5,8 @@ const a = document.querySelector(".img_a");
 
 const path = window.location.href;
 const idProducto = Number(path.slice(path.lastIndexOf("/") + 1));
+// BUSCAR ID de producto... 
+
 
 const usuarioEnLocalStorage = JSON.parse(localStorage.getItem("usuario"));
 //Agregar producto
@@ -27,6 +29,7 @@ btnAgregarCarritoDesktop.addEventListener("click", async () => {
     );
   }
 });
+
 btnAgregarCarritoMobile.addEventListener("click", async () => {
   if (usuarioEnLocalStorage) {
     //Está logueado
@@ -39,6 +42,8 @@ btnAgregarCarritoMobile.addEventListener("click", async () => {
     );
   }
 });
+
+
 
 async function agregarProducto(idProducto) {
   try {
